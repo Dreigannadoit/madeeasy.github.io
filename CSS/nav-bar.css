@@ -1,0 +1,355 @@
+nav {
+  position: fixed;
+  top: 5%;
+  left: 0;
+  transform: translateY(0%);
+  height: 15%;
+  width: 100%;
+  z-index: 999999;
+  transition: 500ms;
+}
+
+nav.scrollup {
+  top: 0%;
+  transform: translateY(-100%);
+}
+
+nav.scrolldown {
+  top: 5%;
+  transform: translateY(0%);
+  transition: 300ms;
+}
+
+nav.sticky {
+  background: rgb(250, 235, 215);
+}
+
+.nav_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
+
+
+.nav_container>.logo_container {
+  height: 100%;
+  width: 20%;
+}
+
+.nav_container>.logo_container>.logo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_container>.logo_container>.logo>img {
+  height: 80%;
+}
+
+.nav_container>.logo_container>.logo>a {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_container>.logo_container>.logo>a>img {
+  height: 80%;
+}
+
+
+
+
+.nav_container>.menu_container {
+  height: 100%;
+  width: 55%;
+}
+
+.nav_container>.menu_container>.menu {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.nav_container>.menu_container>.menu>ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav_container>.menu_container>.menu>ul>li {
+  list-style: none;
+}
+
+.nav_container>.menu_container>.menu>ul>li a {
+  color: rgb(61, 83, 104);
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav.sticky .nav_container>.menu_container>.menu>ul>li a {
+  color: rgb(0, 0, 0);
+  background: transparent;
+}
+
+.nav_container>.menu_container>.menu>ul>li#courses {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+
+.nav_container>.side_content {
+  height: 100%;
+  width: 27%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+.nav_container>.side_content>.login_container {
+  color: #000;
+  overflow: hidden;
+}
+
+.nav_container>.side_content>.login_container>.login {
+  background: blanchedalmond;
+  padding: 10px;
+  height: 100%;
+  width: 70%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.nav_container>.side_content>.login_container>.login::before {
+  content: "login";
+  position: absolute;
+  transition: 500ms;
+}
+
+.nav_container>.side_content>.login_container:hover>.login::before {
+  transform: scale(0);
+}
+
+.nav_container>.side_content>.login_container:hover>.login {
+  width: 100%;
+}
+
+.nav_container>.side_content>.login_container>.login>i {
+  font-size: 25px;
+  display: block;
+  transform: translateX(-100px);
+  transition: 500ms;
+}
+
+.nav_container>.side_content>.login_container:hover>.login>i {
+  transform: translateX(0px);
+}
+
+.nav_container>.side_content>.login_container>.login>span {
+  display: block;
+  transform: translateX(100px);
+  transition: 500ms;
+}
+
+.nav_container>.side_content>.login_container:hover>.login>span {
+  transform: translateX(0px);
+}
+
+
+
+.nav_container>.side_content>.sign_up_container {
+  color: rgb(255, 255, 255);
+}
+
+.nav_container>.side_content>.sign_up_container>.sign_up {
+  background: rgb(207, 76, 43);
+  padding: 10px 35px 10px 35px;
+  height: 100%;
+  width: 70%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.nav_container>.side_content>.sign_up_container:hover>.sign_up {
+  padding: 10px 35px 10px 35px;
+  width: 90%;
+  transform: translateX(-10%);
+}
+
+.nav_container>.side_content>.sign_up_container>.sign_up::before {
+  content: "make ME an account";
+  position: absolute;
+  transition: 500ms;
+}
+
+.nav_container>.side_content>.sign_up_container:hover>.sign_up::before {
+  transform: scale(0);
+}
+
+.nav_container>.side_content>.sign_up_container>.sign_up>i {
+  font-size: 25px;
+  transform: translateX(-100px);
+  transition: 500ms;
+}
+
+.nav_container>.side_content>.sign_up_container:hover>.sign_up>i {
+  transform: translateX(0px);
+}
+
+.nav_container>.side_content>.sign_up_container>.sign_up>span {
+  transform: translateX(150px);
+  display: block;
+  transition: 500ms;
+}
+
+.nav_container>.side_content>.sign_up_container:hover>.sign_up>span {
+  transform: translateX(0px);
+}
+
+
+
+.menu_dropdown {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 100%;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px;
+  transition: 500ms;
+  z-index: -1;
+}
+
+nav.sticky .menu_dropdown {
+  background: rgb(250, 235, 215);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px;
+}
+
+.menu_dropdown.active {
+  height: 300%;
+  width: 90%;
+  top: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+}
+
+.menu_dropdown .mdd {
+  position: relative;
+  background-color: rgb(255, 239, 218);
+  height: 0%;
+  width: 22%;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 0px;
+  transition: 500ms;
+}
+
+.menu_dropdown.active .mdd {
+  padding: 20px;
+  height: 90%;
+}
+
+.menu_dropdown .mdd-skill-beginner {
+  background: rgba(219, 22, 48, 0.8);
+}
+
+.menu_dropdown .mdd-skill-intermediate {
+  background: rgba(4, 165, 170, 0.8);
+}
+
+.menu_dropdown .mdd-skill-advanced {
+  background: rgba(9, 89, 142, 0.8);
+}
+
+.menu_dropdown .mdd ul {
+  list-style: none;
+}
+
+.menu_dropdown .mdd ul li {
+  margin: 10px 0px 10px 0px;
+}
+
+.menu_dropdown .mdd ul li a {
+  color: rgb(255, 255, 255);
+  z-index: 9999;
+  font-size: 15px;
+  transition: 700ms;
+}
+
+.menu_dropdown .mdd ul li a:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 17px;
+  text-shadow: rgba(0, 0, 0, 0.3)0px 4px 12px;
+}
+
+.menu_dropdown .mdd img {
+  position: absolute;
+  height: 80%;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu_dropdown .mdd-info {
+  position: relative;
+  height: 0%;
+  width: 30%;
+  border-radius: 25px;
+  background: rgba(223, 214, 48, 0.8);
+  overflow: hidden;
+  padding: 0px;
+  transition: 500ms;
+}
+
+.menu_dropdown.active .mdd-info {
+  padding: 20px;
+  height: 90%;
+}
+
+.menu_dropdown .mdd-info>.info_content {
+  color: rgb(100, 94, 12);
+  z-index: 99999;
+}
+
+.menu_dropdown .mdd-info>img {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  padding: 10px;
+  height: 250px;
+  z-index: -1;
+}

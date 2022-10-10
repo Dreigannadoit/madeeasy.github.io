@@ -1,0 +1,355 @@
+.courses {
+  top: 1330%;
+}
+
+.footbg {
+  height: 40%;
+  background: #db1630;
+}
+
+
+.header {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.header>.sec {
+  position: relative;
+  height: 100%;
+  width: 33%;
+  transition: 500ms;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.header>.sec .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 500ms;
+}
+
+.header>.sec .bg-before {
+  background: linear-gradient(0deg, rgba(9, 89, 142, 1) 0%, rgba(9, 89, 142, 0.7) 15%, rgba(9, 89, 142, 0) 100%);
+}
+
+.header>.sec-beginner .bg-after {
+  top: -100%;
+  left: -100%;
+  background: linear-gradient(135deg, rgba(4, 165, 170, 1) 5%, rgba(4, 165, 170, 0.2) 20%, rgba(4, 165, 170, 0.0) 100%);
+}
+
+.header>.sec-beginner:hover .bg-after {
+  top: 0;
+  left: 0;
+}
+
+.header>.sec-intermediate .bg-after {
+  top: -100%;
+  background: linear-gradient(180deg, rgba(223, 214, 48, 1) 0%, rgba(223, 214, 48, 0.8) 15%, rgba(223, 214, 48, 0) 100%);
+}
+
+.header>.sec-intermediate:hover .bg-after {
+  top: 0;
+}
+
+.header>.sec-advanced .bg-after {
+  top: -100%;
+  left: 100%;
+  background: linear-gradient(215deg, rgba(219, 22, 48, 1) 5%, rgba(219, 22, 48, 0.2) 20%, rgba(219, 22, 48, 0) 100%);
+}
+
+.header>.sec-advanced:hover .bg-after {
+  top: 0;
+  left: 0;
+}
+
+.header>.sec img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 700ms 250ms;
+  filter: blur(0.px);
+}
+
+.header>.sec:hover img {
+  height: 110%;
+  width: 110%;
+  filter: blur(0px);
+}
+
+.header>.sec>.header-courses-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  padding: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.header>.sec>.header-courses-content h1 {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  line-height: 110%;
+  margin-bottom: 10%;
+}
+
+
+
+.header-course-instruction {
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #09598e;
+  padding: 3%;
+}
+
+.header-course-instruction h1 {
+  color: aliceblue;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+
+
+.course-content {
+  height: 245%;
+}
+
+.course-content.course-intermediate,
+.course-content.course-advanced {
+  height: 490%;
+}
+
+.course-beginner {
+  background: #04a5aa;
+}
+
+.course-intermediate {
+  background: #dfd630;
+}
+
+.course-advanced {
+  background: #db1630;
+}
+
+.course-beginner>.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20%;
+  width: 100%;
+  background: url("../Img/Waves/courses-beginner-up.svg")no-repeat center top/cover;
+}
+
+.course-intermediate>.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: url("../Img/Waves/courses-intermediate-up.svg")no-repeat center top/cover;
+}
+
+.course-advanced>.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: url("../Img/Waves/courses-advanced-up.svg")no-repeat center top/cover;
+}
+
+
+.course-content>.course-container {
+  position: absolute;
+  top: 7%;
+  height: 95%;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: aqua; */
+}
+
+.course-content>.course-container>h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.course-content>.course-container>.card {
+  height: 22%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(236, 143, 68, 0.95), rgba(236, 143, 68, 0.95)), url("../Img/Backgrounds/Halloween.webp")no-repeat center center/cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.course-beginner>.course-container>.card {
+  height: 45%;
+}
+
+.course-content>.course-container>.card>.card-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.course-content>.course-container>.card>.card-container>.card-part {
+  height: 100%;
+}
+
+.course-content>.course-container>.card>.card-container>.card-left {
+  width: 65%;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.course-content>.course-container>.card>.card-container>.card-left>.subject-title {
+  line-height: 180%;
+  margin-bottom: 5px;
+}
+
+.course-content>.course-container>.card>.card-container>.card-left>.subject-title h1 {
+  letter-spacing: 2px;
+  font-size: 35px;
+  line-height: 120%;
+}
+
+.course-content>.course-container>.card>.card-container>.card-left>h3 {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.course-content>.course-container>.card>.card-container>.card-left>.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  margin-left: 3%;
+}
+
+.course-content>.course-container>.card>.card-container>.card-left>.list ul {
+  width: 48%;
+}
+
+
+.course-content>.course-container>.card>.card-container>.card-right {
+  position: relative;
+  width: 35%;
+  transition: 500ms;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.img-container {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right:hover>.img-container {
+  height: 100%;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.img-container img {
+  height: 115%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  padding: 5%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: 500ms;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right:hover>.card-resources {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.languages,
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.duration,
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.learn-more {
+  height: 30%;
+  width: 100%;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.languages {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.languages>h1 {
+  font-weight: 400;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.languages img {
+  height: 60%;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.languages .imgs {
+  height: 100%;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: chocolate;
+  color: #fff;
+}
+
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.learn-more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.learn-more a {
+  padding: 5px 15px 5px 15px;
+  background: chocolate;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 700ms;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources:hover>.learn-more a {
+  box-shadow: rgba(50, 50, 93, 0.65) 0px 30px 60px -12px, rgba(0, 0, 0, 0.7) 0px 18px 36px -18px;
+}

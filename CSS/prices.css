@@ -1,0 +1,358 @@
+.price-plans {
+  top: 330%;
+}
+
+.header {
+  height: 90%;
+  background: url("../Img/Waves/courses-bg.svg")no-repeat center center/cover;
+}
+
+.header-content {
+  height: 100%;
+  width: 100%;
+}
+
+.header-content>.opt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80%;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1000ms;
+}
+
+.header-content>.hidden {
+  left: 100%;
+}
+
+.header-content>.opt .img {
+  position: relative;
+  height: 100%;
+  width: 48%;
+  overflow: hidden;
+}
+
+.header-content>.opt .img img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90%;
+  width: 94%;
+  object-fit: cover;
+  z-index: 99;
+  transition: all 500ms;
+}
+
+.header-content>.opt .img .bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90%;
+  width: 90%;
+  background-image:
+    radial-gradient(#ebebeb 20%, transparent 20%);
+  background-color: transparent;
+  background-position: 0 0, 50px 50px;
+  background-size: 20px 20px;
+  isolation: isolate;
+}
+
+.header-content>.opt .img img:hover {
+  height: 105%;
+  width: 105%;
+}
+
+.header-content>.opt .main-header-content {
+  width: 48%;
+}
+
+.header-content>.opt .main-header-content h1 {
+  font-size: 5.5rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ebebeb;
+}
+
+.header-content>.opt .main-header-content p {
+  font-size: 1rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+
+.header-content>.opt .main-header-content button {
+  position: relative;
+  width: 150px;
+  border: none;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #db1630;
+  transition: 500ms ease;
+  border-radius: 2.5px;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+
+.header-content>.opt .main-header-content button:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  padding: 10px 5px;
+}
+
+.header-content>.opt .main-header-content button::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  background: rgb(255, 132, 0);
+  background: linear-gradient(270deg, rgb(255, 85, 0) 0%, rgba(219, 22, 48, 0.8) 100%);
+  z-index: 0;
+  transition: 500ms ease;
+}
+
+.header-content>.opt .main-header-content button:hover:before {
+  top: 0%;
+  left: 0%;
+}
+
+.header-content>.opt .main-header-content button a {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  isolation: isolate;
+  z-index: 999;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 500ms ease;
+}
+
+.header-content>.opt .main-header-content button a span {
+  transition: 500ms ease;
+}
+
+.header-content>.opt .main-header-content button:hover a span {
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  font-size: 19px;
+}
+
+
+
+.price-content {
+  height: 85%;
+  background: #dfd630;
+  transition: all 1000s;
+}
+
+.price-content>.price-content-container {
+  height: 100%;
+  width: 100%;
+  background: #dfd630;
+}
+
+.price-content>.price-content-container .sec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0 5em;
+}
+
+.price-content>.price-content-container .hidden {
+  left: 100%;
+}
+
+.price-content>.price-content-container .sec-individual {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: none;
+}
+
+.price-content>.price-content-container .sec-individual .mini-course-nav {
+  height: 15%;
+  width: 100%;
+  background: #db6f16;
+}
+
+.price-content>.price-content-container .sec-individual .card-prices {
+  height: 85%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.price-content>.price-content-container .sec-individual .card-prices .card-prices-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  transform: translate(-10%);
+}
+
+.price-content>.price-content-container .sec-individual .card-prices .card-prices-container .price-course {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.price-content>.price-content-container .sec-individual .card-prices .card-prices-container .begginer-courses {
+  left: 0;
+  background: #04a5aa;
+}
+
+.price-content>.price-content-container .sec-individual .card-prices .card-prices-container .intermediate-courses {
+  left: -100%;
+  background: #7c1f1f;
+}
+
+.price-content>.price-content-container .sec-individual .card-prices .card-prices-container .advance-courses {
+  left: -200%;
+  background: #db1630;
+}
+
+
+
+
+
+.sale-info {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dfd630;
+  font-size: 12px;
+}
+
+
+
+.educational-option {
+  height: 120%;
+  background: #09bac0;
+  overflow: hidden;
+}
+
+.educational-option>.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../Img/Waves/register-bg-up.svg")no-repeat center top/cover;
+  z-index: 99999;
+}
+
+.educational-option>.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.educational-option>.bg .c {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  opacity: 0;
+  background: #04a5aa;
+  animation: pop 6500ms infinite;
+}
+
+.educational-option>.bg .c:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.educational-option>.bg .c:nth-child(2) {
+  animation-delay: 500ms;
+}
+
+.educational-option>.bg .c:nth-child(3) {
+  animation-delay: 1000ms;
+}
+
+.educational-option>.bg .c:nth-child(4) {
+  animation-delay: 1500ms;
+}
+
+.educational-option>.bg .c:nth-child(5) {
+  animation-delay: 2000ms;
+}
+
+.educational-option>.bg .c:nth-child(6) {
+  animation-delay: 2500ms;
+}
+
+.educational-option>.bg .c:nth-child(7) {
+  animation-delay: 3000ms;
+}
+
+
+@keyframes pop {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 0.5;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    height: 3000px;
+    width: 3000px;
+    opacity: 0;
+  }
+}
+
+.educational-option>.edu-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 65%;
+  width: 100%;
+  padding: 5%;
+  z-index: 99999999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.educational-option>.edu-container h1 {
+  font-size: 5rem;
+  line-height: 100%;
+}
+
+.educational-option>.edu-container h3 {
+  font-size: 18px;
+}
+
+.educational-option>.edu-container a {
+  margin-top: 25px;
+  padding: 5px;
+  background: #db6f16;
+  color: antiquewhite;
+  font-size: 18px;
+}

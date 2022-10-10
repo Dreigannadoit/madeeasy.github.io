@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>COURSES | MADE EASY</title>
+  <link rel="icon" type="image/png" href="../Img/Logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/aae9a197da.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../CSS/defaults.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/fixed.css">
+  <link rel="stylesheet" href="../CSS/courses.css">
+  <link rel="stylesheet" href="../CSS/nav-bar.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="ask">
+        <a href = "mailto:r.bamba@lsa.ph?subject = Feedback&body = Message">Ask For Help?</a>
+      </div>
+
+      <div class="sales-timer">
+        <div class="sales-timer-container">
+
+          <h1 id="eventName"></h1>
+
+          <div class="days time">
+            <p id="days"></p>
+            <div class="space">..</div>
+            <span>days</span>
+          </div>
+
+          <div class="hr time">
+            <p id="hr"></p>
+            <div class="space">..</div>
+            <span>hours</span>
+          </div>
+
+          <div class="min time">
+            <p id="min"></p>
+            <div class="space">..</div>
+            <span>minutes</span>
+          </div>
+
+          <div class="sec time">
+            <p id="sec"></p>
+            <div class="space">..</div>
+            <span>seconds</span>
+          </div>
+        </div>
+      </div>  
+      
+      <nav id="navbar">
+        <div class="nav_container">
+
+          <div class="logo_container">
+            <div class="logo">
+              <img loading="lazy" src="../Img/Logo.svg" alt="">
+              <span class="space">_</span>
+              <span>Made Easy</span>
+              &#8482;
+            </div>
+          </div>
+
+          <div class="menu_container">
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="./header-page.html">Home</a>
+                </li>
+                <li id="courses">
+                  <a href="./courses.html">Courses</a>
+                </li>
+                <li>
+                  <a href="./Price-plans.html">Pricing</a>
+                </li>
+                <li>
+                  <a href="./about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./blog.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side_content">
+            
+            <a class="login_container" href="./404.html">
+              <div class="login">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <span class="space">_</span>
+                <span>Login</span>
+              </div>
+            <a>
+
+            <a class="sign_up_container" href="./log-in.html">
+              <div class="sign_up">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                <span class="space">_</span>
+                <span>Begin</span>
+                <span class="space">.</span>
+                <span>Your</span>
+                <span class="space">.</span>
+                <span>Journey</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="menu_dropdown" id="menu_dropdown">
+
+          <div class="mdd mdd-skill-beginner">
+            <h1>BEGINNER</h1>
+            <ul>
+              <li>
+                <a href="./courses.html#GameDev">Game Development</a>
+              </li>
+              <li>
+                <a href="./courses.html#BasicAppDev">Basic App Development</a>
+              </li>
+            </ul>
+            <img loading="lazy" src="../Img/nav/beginner.png" alt="">
+          </div>
+
+          <div class="mdd mdd-skill-intermediate">
+            <h1>INTERMEDIATE</h1>
+            <ul>
+              <li>
+                <a href="./courses.html#InterAppDev">Intermediate App Development</a>
+              </li>
+              <li>
+                <a href="./courses.html#WebDev">Website Development</a>
+              </li>
+              <li>
+                <a href="./courses.html#PyDev">Python Programming</a>
+              </li>
+              <li>
+                <a href="./courses.html#OOPDev">Object Oriented Basics in JAVA, C++ and C#</a>
+              </li>
+            </ul>
+            <img loading="lazy" src="../Img/nav/intermediate.png" alt="">
+          </div>
+
+          <div class="mdd mdd-skill-advanced">
+            <h1>ADVANCED</h1>
+            <ul>
+              <li>
+                <a href="./courses.html#RobloxDev">Roblox Game Development</a>
+              </li>
+              <li>
+                <a href="./courses.html#3DGameDev">3D Game Development (C#)</a>
+              </li>
+              <li>
+                <a href="./courses.html#GraphicDes">Graphics Designing in terms of 3D modeling</a>
+              </li>
+              <li>
+                <a href="./courses.html#AILearning">AI and Machine Learning</a>
+              </li>
+            </ul>
+            <img loading="lazy" src="../Img/nav/advanced.png" alt="">
+          </div>
+          
+          <div class="mdd-info">
+            <div class="info_content">
+              <h1>YOUR CHILD CAN BE ONE OF THE GREATS!</h1>
+              <p>Through these courses provided, your child can develop crtitical thinking, problem solving, and programming skills that will help them in future carrer choices.</p>
+            </div>
+            <img loading="lazy" src="../Img/nav/mdd-info.svg" alt="">
+          </div>
+        </div>
+      </nav>
+      
+      <div class="content">
+        <a class="backToHeader" href="#course-header">
+          <button>
+            <div class="arrow-up">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
+            <div class="div-text">
+              <span>Back to top</span>
+
+            </div>
+          </button>
+        </a>
+      
+         <section class="header" id="course-header">
+          <a href="#course-beginner" class="sec-beginner sec">
+            <img loading="lazy" src="../Img/overview/BEGINNER-1.jpg" alt="">
+            <div class="bg bg-before"></div>
+            <div class="bg bg-after"></div>
+
+            <div class="header-courses-content">
+              <h1>Beginner <br> Courses</h1>
+            </div>
+          </a>
+
+          <a href="#course-intermediate" class="sec-intermediate sec">
+            <img loading="lazy" src="../Img/overview/INTERMEDIATE-3.jpg" alt="">
+            <div class="bg bg-before"></div>
+            <div class="bg bg-after"></div>
+
+            <div class="header-courses-content">
+              <h1>Intermediate <br> Courses</h1>      
+            </div>
+          </a>
+
+          <a href="#course-advanced" class="sec-advanced sec">
+            <img loading="lazy" src="../Img/overview/ADVANCE-2.png" alt="">
+            <div class="bg bg-before"></div>
+            <div class="bg bg-after"></div>
+
+            <div class="header-courses-content">
+              <h1>Advanced <br> Courses</h1>        
+            </div>
+          </a>
+         </section>
+
+         <section class="header-course-instruction">
+          <h1>Click One of the Courses Above to learn More about them</h1>
+         </section>
+
+         <section class="course-content course-beginner">
+          <div class="wave"></div>
+
+          <div class="course-container beginner-content" id="course-beginner">
+            <h1>BEGINNER</h1>
+
+            <div class="card" id="GameDev">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>Game Development</h1>
+                    <p>(block based javascript)</p>
+                  </div>
+                  <p>
+                    Children will be introduced to the block-based coding through which they will learn the fundamental program constructs and will practice in JavaScript Programming language.
+
+                    They will create programmatic images, animations, interactive arts and games. They will start with simple and primitive shapes and build up to more sophisticated sprite-based games, students will become familiar with the programming concepts and the design process that computer scientists use daily. They then learn how these simpler constructs can be combined to create more complex games. At the end of the course, students will develop a personalized, interactive game of their own that includes basic programming concepts such as control structures, variables, user input and randomness
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Working with drawing and shapes in Game Lab</li>
+                      <li>Introduction to Game Designing</li>
+                      <li>Introduction to Variables and Random Number</li>
+                      <li>Sprites and Sprites Properties</li>
+                      <li>Working with text in games</li>
+                      <li>Introduction to Draw Loop in games</li>
+                      <li>Animation in Games</li>
+                      <li>Sprite Movement using keyboard and mouse input</li>
+                      <li>Introduction to Conditionals and Using them in games</li>
+                    </ul>
+                    <ul>
+                      <li>Introduction to Functions</li>
+                      <li>Velocity and Complex sprite geometrical movement</li>
+                      <li>Type of Collisions and Collision Detection</li>
+                      <li>Design and create your own gaming project</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div class="img-container">
+                    <img loading="lazy" src="../Img/overview/BEGINNER-1.jpg" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <img loading="lazy" src="../Img/overview/js-logo.png" alt="">
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>50 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="BasicAppDev">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>App Development</h1>
+                    <p>(javascript)</p>
+                  </div>
+                  <p>      
+                    Children will learn to make simple apps using JavaScript Programming language in block-based coding. They will start with creating single screen app design and coding and will move their way up to multiscreen apps. The course will cover the fundamentals of JavaScript which will lay the foundation for the children for programming. At the end of the course, children will make their own apps and publish in Google Play store.
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Introduction to the concept of App</li>
+                      <li>Introduction to App Designing</li>
+                      <li>Make single screen Apps</li>
+                      <li>Introduction to Multiscreen Apps</li>
+                      <li>Variables and different types of variables</li>
+                      <li>Strings, Arrays and Applications</li>
+                      <li>Timed loops</li>
+                      <li>Make apps applying the concept of variable and Timed loop</li>
+                      <li>Introduction to randomness in coding</li>
+                      <li>Simple and Complex conditionals</li>
+                    </ul>
+                    <ul>
+                      <li>Make apps based on randomness and complex conditional</li>
+                      <li>For and While loops</li>
+                      <li>More applications of loops</li>
+                      <li>Functions & using data in functions</li>
+                      <li>Build various applications</li>
+                      <li>Make your own app and publish on Google Play Store</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div class="img-container">
+                    <img loading="lazy" src="../Img/overview/BEGINNER-2.png" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <img loading="lazy" src="../Img/overview/js-logo.png" alt="">
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>50 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+         </section>
+
+         <section class="course-content course-intermediate" >
+          <div class="wave"></div>
+
+          <div class="course-container intermediate-content"id="course-intermediate">
+            <h1>INTERMEDIATE</h1>
+
+            <div class="card" id="InterAppDev">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>Intermediate App Development</h1>
+                    <p>(javascript)</p>
+                  </div>
+                  <p>
+                    Children will develop the basic version of real-life apps, apps which are used frequently in everyday lives such as a typical basic e-commerce app, weather app, and food-delivery app. They will apply the various computer programming concepts learnt during the course in developing these apps. They’ll also learn advanced concepts in JavaScript Programming language which are frequently used in intermediate level app development.
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Basics of traversing Arrays/Lists</li>
+                      <li>Make Apps based on the application of Arrays</li>
+                      <li>Using files and databases</li>
+                      <li>Make Apps applying databases</li>
+                      <li>Introduction to Application Programming Interface (API)</li>
+                      <li>Make real time apps using various APIs</li>
+                      <li>41 50 50 20 54 4F 20 43 4F 4E 54 52 4F 4C 20 54 48 45 20 57 49 4C 4C 20 4F 46 20 41 4E 59 20 49 4E 44 49 56 49 44 55 41 4C</li>
+                      <li>Google Maps and its usage in Apps</li>
+                      <li>UI/UX in App Designing</li>
+                      <li>Gaming Canvas</li>
+                    </ul>
+                    <ul>
+                      <li>Making Gaming Apps</li>
+                      <li>Sensors design components in Apps</li>
+                      <li>Make your own App and Publish in Google Play store using all above lessons</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div class="img-container">
+                    <img loading="lazy" src="../Img/overview/INTERMEDIATE-1.jpg" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <img loading="lazy" src="../Img/overview/js-logo.png" alt="">
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>50 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="WebDev">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>Website Development</h1>
+                    <p>(HTML CSS/JavaScript)</p>
+                  </div>
+                  <p>
+                    Children will be introduced to text based coding during this course. They will understand the concepts learnt in block based coding in actual JavaScript environment. Children will learn to create their own websites and with intermediate-level web development features.
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Introduction to HTML Programming language</li>
+                      <li>Introduction to CSS Programming language</li>
+                      <li>Making simple websites</li>
+                      <li>Creating simple and dropdown Menu in websites</li>
+                      <li>Creating personal online website applying the concepts learnt so far</li>
+                      <li>Linking Google Maps and social media platforms in websites</li>
+                      <li>Adding advanced styling techniques in websites</li>
+                      <li>Professional multipage website development</li>
+                      <li>Integrating videos and carousel in websites</li>
+                      <li>Integrating Bootstrap styling techniques in websites</li>
+                    </ul>
+                    <ul>
+                      <li>Adding Responsiveness in website</li>
+                      <li>Integrating chat service in website</li>
+                      <li>Creating professional blogging website</li>
+                      <li>Publish website in the web through GitHub pages</li>
+                      <li>Create and publish your own website</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div loading="lazy" class="img-container">
+                    <img src="../Img/overview/INTERMEDIATE-2.jpg" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <div class="imgs">
+                        <img loading="lazy" src="../Img/overview/html-logo.png" alt="">
+                        <img loading="lazy" src="../Img/overview/css-logo.png" alt="">
+                        <img loading="lazy" src="../Img/overview/js-logo.png" alt="">
+                      </div>
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>50 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="PyDev">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>Python Programming</h1>
+                    <p>(Python)</p>
+                  </div>
+                  <p>
+                    Children will be introduced to Python, a popular programming language. They will learn the fundamentals of Python language and create projects based on the concepts learnt. They’ll work with simple and complex data in this programming environment and will be comfortable coding in Python for various basic applications.
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Introduction to Python & computer programming</li>
+                      <li>Data-types, Variables, Basic I/O, & Operators</li>
+                      <li>Boolean Values, Conditional Execution, Loops, Lists, Logical & Bit-wise operations</li>
+                      <li>Functions, Modules, Packages, & Data-processing</li>
+                      <li>Classes, Methods, Objects & File-handling</li>
+                      <li>Introduction to PyGame & Alien Invasion Game</li>
+                      <li>Coding Python Hunt Game, Adventure Quest, MonsterRescue & SaveMyEggs</li>
+                      <li>Introduction to NASA Python APIs</li>
+                      <li>Introduction to AI concepts using Python</li>
+                      <li>Basics of client-server network and programming using Python</li>
+                    </ul>
+                    <ul>
+                      <li>Turn Your Enemies Gay Algorithm</li>
+                      <li>Solving Fun challenges through code in Python</li>
+                      <li>Basic Data collection methods through Python</li>
+                      <li>Data Interpretation and Data Analysis</li>
+                      <li>Data storage and usability</li>
+                      <li>Data Collection through Django Framework</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div class="img-container">
+                    <img loading="lazy" src="../Img/overview/INTERMEDIATE-3.jpg" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <img loading="lazy" src="../Img/overview/python-logo.png" alt="">
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>50 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="OOPDev">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>Object Oriented Basics in JAVA, C++ and C#</h1>
+                    <p>(Java/C++/C#)</p>
+                  </div>
+                  <p>
+                    Children will be introduced to object-oriented programming languages such as JAVA, C++ and C#. They will be taught the basic concepts – what is a class and what is an object in these languages. They will create various projects based on the concepts learnt during the course. Children can take up this course once they have done the basic course in JavaScript.
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Introduction to Object Oriented Programming Language (OOPs)</li>
+                      <li>Procedure Oriented Structures vs. Object Oriented Structures</li>
+                      <li>Simple C++ Statements, Structures and General Syntax</li>
+                      <li>Data types, Operators and Controls</li>
+                      <li>Variables, Functions, Classes & Objects Basics</li>
+                    </ul>
+                    <ul>
+                      <li>Inheritance Basics & Applications</li>
+                      <li>Basics of Abstraction and Encapsulation</li>
+                      <li>Input/Output and Working with Files</li>
+                      <li>Building Games using OOPs concepts</li>
+                      <li>Project in C# or Java or C++</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div class="img-container">
+                    <img loading="lazy" src="../Img/overview/INTERMEDIATE-4.png" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <div class="imgs">
+                        <img loading="lazy" src="../Img/overview/java-logo.png" alt="">
+                        <img loading="lazy" src="../Img/overview/c-sharp-logo.png" alt="">
+                        <img loading="lazy" src="../Img/overview/c-logo.png" alt="">
+                      </div>
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>50 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+             
+          </div>
+
+         </section>
+
+         <section class="course-content course-advanced" >
+          <div class="wave"></div>
+
+          <div class="course-container advanced-content" id="course-advanced">
+            <h1>ADVANCE</h1>
+
+            <div class="card" id="RobloxDev">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>Roblox Game Development</h1>
+                    <p>(Lua)</p>
+                  </div>
+                  <p>
+                    Children will learn to develop games in Roblox studio in this course. They would learn the programming language ‘Lua’, which is used to create games in Roblox. The course includes the entire fundamental programming concepts which would help get the necessary foundation for the children to develop games in Roblox studio in future. Children will also learn the programming basics and constructs to develop their skills in any programming language.
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Introduction to Roblox studio</li>
+                      <li>Game Designing in Roblox</li>
+                      <li>Scripting in Roblox studio</li>
+                      <li>Variables in Lua scripting and basics</li>
+                      <li>Make various games based on variables</li>
+                      <li>Introduction to Loops, Conditionals and Arrays in Lua</li>
+                      <li>Applying Loops and Conditionals</li>
+                      <li>Creating Player Tool and applying in creating games</li>
+                      <li>Collision and Collision detection</li>
+                      <li>Controlling media files such as camera, images, text, and frames</li>
+                    </ul>
+                    <ul>
+                      <li>Graphical User Interface basics</li>
+                      <li>Application of physics concepts in game development – Gravity, Collision, etc.</li>
+                      <li>Create and publish your own game in Roblox</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div class="img-container">
+                    <img loading="lazy" src="../Img/overview/ADVANCE-1.jpg" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <img loading="lazy" src="../Img/overview/lua-logo.png" alt="">
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>50 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="3DGameDev">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>3D Game Development</h1>
+                    <p>(C#)</p>
+                  </div>
+                  <p>
+                    Children will learn to make 2D and 3D games in the gaming platform, Unity. During the course, the child will learn all the coding fundamentals of the programming language C#. 2D and 3D game development concepts are used in C# language. They will start with simple games applying the simple concepts in C# and progress to complex multiplayer games. At the end of the course, the child will be able to create his or her own games in Unity comfortably.
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Introduction to C# concepts and basic syntax</li>
+                      <li>Understanding C# scripting in Unity Platform</li>
+                      <li>Event Function in Unity</li>
+                      <li>Games based on variables and events in Unity</li>
+                      <li>Variables, Functions and Classes Basics</li>
+                      <li>Functions with parameters and return in Unity</li>
+                      <li>Conditionals in C# in Unity</li>
+                      <li>Make Games based on conditionals and variables in Unity</li>
+                      <li>Loops in Unity such a While Loop, For Each Loop and For loop</li>
+                      <li>Applying loops in game development</li>
+                    </ul>
+                    <ul>
+                      <li>Arrays in C#</li>
+                      <li>Working with Game Object in Unity</li>
+                      <li>Keyboard and mouse input in Unity</li>
+                      <li>Applying physics concepts in game development</li>
+                      <li>Checking Collision in Unity</li>
+                      <li>Game Development Project</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div class="img-container">
+                    <img loading="lazy" src="../Img/overview/ADVANCE-2.png" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <img loading="lazy" src="../Img/overview/c-sharp-logo.png" alt="">
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>50 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="GraphicDes">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>Graphics Designing</h1>
+                    <p>(Blender)</p>
+                  </div>
+                  <p>   
+                    In this course, kids will learn about 3D modeling & animation by visualizing and creating their own 3D designs, enabling them to convert their imagination to reality. They will learn to use 3D tools and create objects in virtual space and will learn basic modeling and rendering
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Basic 3D Geometry</li>
+                      <li>Understanding viewports</li>
+                      <li>Modeling using 3D forms</li>
+                      <li>Understanding and creating structures using polygon components</li>
+                      <li>Extrude and bevel tool in animation</li>
+                      <li>Materials and Lights</li>
+                      <li>Working with camera and render setup</li>
+                      <li>Components and Basic architecture modeling</li>
+                      <li>Modifying structure</li>
+                      <li>Basics of Animation</li>
+                    </ul>
+                    <ul>
+                      <li>Understanding Rendering</li>
+                      <li>Modeling & Textures</li>
+                      <li>Key frames and Frame per second</li>
+                      <li>Animation & Modeling Project</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div class="img-container">
+                    <img loading="lazy" src="../Img/overview/ADVANCE-3.jpg" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <img loading="lazy" src="../Img/overview/blender.png" alt="">
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>20 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="AILearning">
+              <div class="card-container">
+                <div class="card-part card-left">
+                  <div class="subject-title">
+                    <h1>AI and Machine Learning</h1>
+                    <p>(Python)</p>
+                  </div>
+                  <p>
+                    Students will be introduced to the concepts of Artificial Intelligence and Machine Learning. The course will introduce to simple machine learning models to students through games and interactive projects. Students will explore how to teach computers patterns, and then develop machine learning projects around basic data. By the end of the course children will be able to apply basic concepts of AI/ML.
+                  </p>
+                  <h3>Course Structure</h3>
+                  <div class="list">
+                    <ul>
+                      <li>Introduction to Machine Learning and AI</li>
+                      <li>Types of Machine Learning Models</li>
+                      <li>Toying with IBM Watson Assistant</li>
+                      <li>Finding patterns – basic clustering and grouping</li>
+                      <li>Understanding different types of data – picture, video, text, etc.</li>
+                      <li>Machine learning cycle – identify, prepare, select the model, train, evaluate & deploy.</li>
+                      <li>Basic text sentiment analysis app</li>
+                      <li>Introduction to Chatbots</li>
+                      <li>Creating Chatbots</li>
+                      <li>Integrating Chatbots in App</li>
+                    </ul>
+                    <ul>
+                      <li>Create your own AI/ML Project</li>
+                      <li>Building and Using Neural Networks</li>
+                      <li>Adaptation through Evolutionary Computation</li>
+                      <li>Sky-Net</li>
+                      <li>Computer Vision</li>
+                      <li>AI that can learn and destroy anyone you want</li>
+                      <li>Human-AI Interaction</li>
+                      <li>Representation & Reasoning</li>
+                      <li>Types and Algorithms of Machine Learning
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+                <div class="card-part card-right">
+                  <div class="img-container">
+                    <img loading="lazy" src="../Img/overview/ADVANCE-4.jpg" alt="">
+                  </div>
+
+                  <div class="card-resources">
+                    <div class="languages">
+                      <h1>Languages Covered:</h1>
+                      <img loading="lazy" src="../Img/overview/python-logo.png" alt="">
+                    </div>
+                    <div class="duration">
+                      <h1>Duration: <span>50 hours</span></h1>
+                    </div>
+                    <div class="learn-more">
+                      <a href="./Price-plans.html"><span>See our Prices</span></a>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+         </section>
+
+         <section class="footbg"></section>
+
+      </div>
+
+      <!-- <div class="progress-header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div> -->
+
+      <footer class="courses">
+        <div class="wave"></div>
+        <div class="main">
+          <div class="dis b">
+            <div class="logo">
+              <img loading="lazy" src="../Img/Logo.svg" alt="">
+              <h1>MADE EASY</h1>
+            </div>
+            <p>MADE EASY strives to make coding a skill set and tool to understand and appreciate every technology that a child consumes in today’s world.</p>
+            <a href="./header-page.html">Read More</a>
+            <div class="social-links">
+              <a href="./404.html"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="./404.html"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="./404.html"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="quick-links b">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="./404.html">My account</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./404.html">Institutions</a></li>
+              <li><a href="./404.html">Terms & Conditions</a></li>
+              <li><a href="./404.html">Privacy Policy</a></li>
+              <li><a href="./404.html">Cancellation and Refund Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="courses-links b">
+            <h1>Courses</h1>
+            <ul>
+              <li><a href="./courses.html#sec-b">Basic</a></li>
+              <li><a href="./courses.html#sec-i">Intermediate</a></li>
+              <li><a href="./courses.html#sec-a">Advanced</a></li>
+            </ul>
+          </div>
+
+          <div class="quick-links b">
+            <h1>Get in Touch</h1>
+            <ul>
+              <li>+123-456-7890(Philippines)</li>
+              <li>r.bamba@lsa.ph</li>
+              <li>Iligan City, Mindanao, Philippines</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright © 2022 <span>GROUP 14</span>. All Rights Reversed | Designed by <span>ROBERT ANDREI N. BAMBA</span></p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="../Scripts/sale-timer.js"></script>
+  <script src="../Scripts/nav.js"></script>
+  <script src="../Scripts/courses.js"></script>
+</body>
+</html>

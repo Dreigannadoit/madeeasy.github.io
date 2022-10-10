@@ -1,0 +1,70 @@
+/* 
+background: rgba(219, 22, 48, 0.8);
+background: #db1630;
+
+background: rgba(4, 165, 170, 0.8);
+background: #04a5aa;
+
+background: rgba(9, 89, 142, 0.8);
+background: #09598e;
+
+background: rgba(223, 214, 48, 0.8); 
+background: #dfd630; 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  background: rgb(250, 230, 204);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper>.container {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.index-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.index-page h1 {
+  font-size: 60px;
+}
+
+.index-page p {
+  font-size: 30px;
+}

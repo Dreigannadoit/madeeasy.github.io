@@ -1,0 +1,218 @@
+.pop-up {
+  position: fixed;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-49.3%, 30%);
+  height: 50%;
+  width: 70%;
+  background: rgb(255, 244, 230);
+  z-index: 999999999999;
+  border-radius: 5px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  transition: 500ms;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 22px 70px 4px;
+  animation: visiblepop 700ms 1400ms forwards;
+}
+
+@keyframes visiblepop {
+  0% {
+    bottom: -50%;
+  }
+
+  100% {
+    bottom: -5%;
+  }
+}
+
+.pop-up.exit {
+  transform: translate(-49.3%, 100%);
+}
+
+.pop-up .top {
+  height: 15%;
+  border-bottom: solid 1px darkgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pop-up .top button {
+  border: none;
+  background: none;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+}
+
+.pop-up .top button p {
+  font-size: 15px;
+  margin-right: 5px
+}
+
+.pop-up .middle {
+  height: calc(100%-15%);
+}
+
+.ask {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  height: 50px;
+  width: 200px;
+  z-index: 999999999;
+}
+
+.ask a {
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  font-size: 20px;
+  background-color: rgb(255, 68, 0);
+  color: aliceblue;
+}
+
+.sales-timer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(212, 107, 22, 0.8), rgba(212, 107, 22, 0.7)), url("../Img/Backgrounds/Halloween.webp")no-repeat center 0px/cover;
+  z-index: 999999999;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sales-timer>.sales-timer-container {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sales-timer>.sales-timer-container h1 {
+  font-size: 100%;
+  padding: 5%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.sales-timer>.sales-timer-container>h1>span {
+  padding: 5px;
+  color: #fff;
+  background: #b93518;
+  margin: 5px;
+}
+
+.sales-timer>.sales-timer-container>.time {
+  display: flex;
+  flex-direction: row;
+}
+
+.sales-timer>.sales-timer-container>.time p {
+  text-align: center;
+  width: 100px;
+  background: #000;
+  color: aliceblue;
+}
+
+
+.progress-header {
+  position: fixed;
+  bottom: 45%;
+  transform: translateY(50%);
+  z-index: 9999999999;
+  width: 2%;
+  height: 40%;
+  background-color: #f1f1f1;
+}
+
+.progress-header>.progress-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(218, 218, 218, 0.6);
+}
+
+.progress-header>.progress-container>.progress-bar {
+  width: 100%;
+  background: rgb(0, 255, 162);
+  height: 0%;
+}
+
+.backToHeader {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999999999;
+  overflow: hidden;
+  transition: all 500ms;
+}
+
+.backToHeader:hover {
+  width: 160px;
+}
+
+.backToHeader>button {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  color: #db6f16;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.backToHeader>button .arrow-up {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  background: #db6f16;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 4000ms;
+}
+
+.backToHeader:hover>button .arrow-up {
+  left: 25px;
+  transition: all 200ms;
+}
+
+.backToHeader>button .div-text {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  transform: translateY(-50%);
+  width: 160px;
+  height: 50px;
+  overflow: hidden;
+  transition: 400ms 0ms;
+}
+
+.backToHeader:hover>button .div-text {
+  left: 12%;
+  transition: 400ms 0ms;
+}

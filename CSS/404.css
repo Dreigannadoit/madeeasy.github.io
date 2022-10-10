@@ -1,0 +1,26 @@
+.PageNotfound {
+  height: 110%;
+  background: url("../Img/Waves/about.svg")no-repeat center bottom/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  height: 70%;
+  width: 90%;
+  background: rgba(255, 237, 213, 0.9);
+  background: linear-gradient(0deg, rgba(255, 237, 213, 0.9), rgba(255, 237, 213, 0.9)), url('../Img/Backgrounds/bg-all.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-container h1:nth-child(1) {
+  font-size: 60px;
+}
+
+.content-container h1:nth-child(2) {
+  font-size: 50px;
+}

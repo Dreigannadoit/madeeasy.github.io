@@ -1,0 +1,91 @@
+footer {
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 99999999;
+}
+
+.overview {
+  top: 1190%;
+}
+
+footer>.wave {
+  height: 30%;
+  width: 100%;
+  background: url("../Img/Waves/footer.svg")no-repeat center bottom/cover;
+}
+
+footer>.main {
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #797979;
+}
+
+footer>.main .b {
+  height: 80%;
+  width: 20%;
+}
+
+footer>.main .dis .logo {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+footer>.main .dis .logo img {
+  height: 100%;
+}
+
+footer>.main .dis p {
+  padding: 10px;
+}
+
+footer>.main .dis>a {
+  color: aliceblue;
+  background: rgb(228, 87, 52);
+  padding: 10px;
+}
+
+footer>.main .dis .social-links {
+  width: 100%;
+  margin-top: 5px;
+  float: right;
+}
+
+footer>.main .dis .social-links a {
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+footer>.main .b ul {
+  list-style: none;
+}
+
+footer>.main .b ul li a {
+  color: #000;
+}
+
+
+footer>.copyright {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(11, 66, 148);
+}
+
+footer>.copyright p {
+  color: aliceblue;
+}
+
+footer>.copyright span {
+  color: rgb(231, 152, 4);
+}
