@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    Hi there,
+    If you are reading this, then you are: 
+    A- Studying how I made this Website
+    or
+    B-trying to edit stuff within my website.
+    If you are one of the following, stop. For one, I made this website in the assumption that it would be a small scale website, but it turned absolutely massive. If I would have known my project would get so big, then I would have done alot of stuff differently. Secondly, everythin in this website is put togeter in a delicate balance. One wrong move, and it turns to dos poo poo. The best way to describe it, it's like if a plane was supportwed with papper tape, and its raining. This whole thing could fall apart.
+
+    Thank you, Me
+  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MADE EASY</title>
+  <link rel="icon" type="image/png" href="../Img/Logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/aae9a197da.js" crossorigin="anonymous"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+
+  <link rel="stylesheet" href="../CSS/defaults.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/fixed.css">
+  <link rel="stylesheet" href="../CSS/nav-bar.css">
+  <link rel="stylesheet" href="../CSS/overview.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="pop-up" id="pop-up">
+      <div class="top">      
+        <h1>THIS IS A DEMO</h1>
+        <button onclick="popUp()">
+          <p>Exit Pop Up</p>
+          <i class="fa fa-times-circle" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="middle">
+        <hr>
+        <p>This is a Concept Business Website created by Group 14, and designed by Robert Bamba, for our Entrepreneurship Project. The contents of this Website contains what services our Business can provide and the means we need to serve them.</p>
+      </div>
+
+      <script>
+        function popUp(){
+          document.getElementById("pop-up").classList.add("exit");
+        }
+      </script>
+    </div>
+
+    <div class="container">
+
+      <div class="ask">
+        <a href = "mailto:r.bamba@lsa.ph?subject = Feedback&body = Message">Ask For Help?</a>
+      </div>
+      
+      <div class="sales-timer">
+        <div class="sales-timer-container">
+
+          <h1 id="eventName"></h1>
+
+          <div class="days time">
+            <p id="days"></p>
+            <div class="space">..</div>
+            <span>days</span>
+          </div>
+
+          <div class="hr time">
+            <p id="hr"></p>
+            <div class="space">..</div>
+            <span>hours</span>
+          </div>
+
+          <div class="min time">
+            <p id="min"></p>
+            <div class="space">..</div>
+            <span>minutes</span>
+          </div>
+
+          <div class="sec time">
+            <p id="sec"></p>
+            <div class="space">..</div>
+            <span>seconds</span>
+          </div>
+        </div>
+      </div>  
+
+      <nav id="navbar">
+        <div class="nav_container">
+
+          <div class="logo_container">
+            <div class="logo">
+              <img loading="lazy" src="../Img/Logo.svg" alt="#Logo">
+              <span class="space">_</span>
+              <span>Made Easy</span>
+              &#8482;
+            </div>
+          </div>
+
+          <div class="menu_container">
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="./header-page.html">Home</a>
+                </li>
+                <li id="courses">
+                  <a href="./courses.html">Courses</a>
+                </li>
+                <li>
+                  <a href="./Price-plans.html">Pricing</a>
+                </li>
+                <li>
+                  <a href="./about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./blog.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side_content">
+            
+            <a class="login_container" href="./404.html">
+              <div class="login">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <span class="space">_</span>
+                <span>Login</span>
+              </div>
+            <a>
+
+            <a class="sign_up_container" href="./log-in.html">
+              <div class="sign_up">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                <span class="space">_</span>
+                <span>Begin</span>
+                <span class="space">.</span>
+                <span>Your</span>
+                <span class="space">.</span>
+                <span>Journey</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="menu_dropdown" id="menu_dropdown">
+
+          <div class="mdd mdd-skill-beginner">
+            <h1>BEGINNER</h1>
+            <ul>
+              <li>
+                <a href="./courses.html#GameDev">Game Development</a>
+              </li>
+              <li>
+                <a href="./courses.html#BasicAppDev">Basic App Development</a>
+              </li>
+            </ul>
+            <img loading="lazy" src="../Img/nav/beginner.png" alt="">
+          </div>
+
+          <div class="mdd mdd-skill-intermediate">
+            <h1>INTERMEDIATE</h1>
+            <ul>
+              <li>
+                <a href="./courses.html#InterAppDev">Intermediate App Development</a>
+              </li>
+              <li>
+                <a href="./courses.html#WebDev">Website Development</a>
+              </li>
+              <li>
+                <a href="./courses.html#PyDev">Python Programming</a>
+              </li>
+              <li>
+                <a href="./courses.html#OOPDev">Object Oriented Basics in JAVA, C++ and C#</a>
+              </li>
+            </ul>
+            <img loading="lazy" src="../Img/nav/intermediate.png" alt="">
+          </div>
+
+          <div class="mdd mdd-skill-advanced">
+            <h1>ADVANCED</h1>
+            <ul>
+              <li>
+                <a href="./courses.html#RobloxDev">Roblox Game Development</a>
+              </li>
+              <li>
+                <a href="./courses.html#3DGameDev">3D Game Development (C#)</a>
+              </li>
+              <li>
+                <a href="./courses.html#GraphicDes">Graphics Designing in terms of 3D modeling</a>
+              </li>
+              <li>
+                <a href="./courses.html#AILearning">AI and Machine Learning</a>
+              </li>
+            </ul>
+            <img loading="lazy" src="../Img/nav/advanced.png" alt="">
+          </div>
+          
+          <div class="mdd-info">
+            <div class="info_content">
+              <h1>YOUR CHILD CAN BE ONE OF THE GREATS!</h1>
+              <p>Through these courses provided, your child can develop crtitical thinking, problem solving, and programming skills that will help them in future carrer choices.</p>
+            </div>
+            <img loading="lazy" src="../Img/nav/mdd-info.svg" alt="">
+          </div>
+        </div>
+      </nav>
+
+      <div class="content">
+        <section class="s-header">
+          <div class="s-header-background" id="s-header-background">
+            <div class="cover"></div>
+            <div class="h-s h-s-1">
+              <img loading="lazy" class="first-left" src="../Img/overview/H-1.png" alt="#">
+              <img src="../Img/overview/H-1.png" alt="#">
+            </div>
+            <div class="h-s h-s-2">
+              <img loading="lazy" class="first-right" src="../Img/overview/H-2.png" alt="#">
+              <img src="../Img/overview/H-2.png" alt="#">
+            </div>
+            <div class="h-s h-s-3">
+              <img loading="lazy" class="first-left" src="../Img/overview/H-3.png" alt="#">
+              <img src="../Img/overview/H-3.png" alt="#">
+            </div>
+            <div class="h-s h-s-4">
+              <img loading="lazy" class="first-right" src="../Img/overview/H-1.png" alt="#">
+              <img src="../Img/overview/H-1.png" alt="#">
+            </div>
+            <div class="h-s h-s-5">
+              <img loading="lazy" class="first-left" src="../Img/overview/H-2.png" alt="#">
+              <img src="../Img/overview/H-2.png" alt="#">
+            </div>
+            <div class="h-s h-s-6">
+              <img loading="lazy" class="first-right" src="../Img/overview/H-3.png" alt="#">
+              <img src="../Img/overview/H-3.png" alt="#">
+            </div>
+          </div>         
+          <div class="header-content-container">
+            <div class="s-header-content">
+              <div class="h-m header-title">
+                <h3>Computer Science</h3>
+                <h1>
+                  <span>M</span>
+                  <span>A</span>
+                  <span>D</span>
+                  <span>E</span>
+                  <div class="space">.</div>
+                  <span>E</span>
+                  <span>A</span>
+                  <span>S</span>
+                  <span>Y</span>
+                </h1>
+                <p>
+                  A the fastest program dedicated to developing children's cognitive thinking, critical thinking, artistic, problem-solving, and programming skills.
+                </p>
+                <button>
+                  <a href="./log-in.html">
+                    Begin Your Journey To Greatness
+                  </a>
+                </button>
+              </div>
+              <div class="h-m header-vid"></div>
+            </div>
+          </div>
+
+          <div class="wave"></div>
+        </section>
+
+        <section class="s-courses">
+          <h1>Available Courses</h1>
+          <span class="orb-content"></span>
+          <div class="swiper s-courses-Swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 130.5 48" xml:space="preserve" width="174" height="64"><style>.st0{fill:rgb(97, 97, 97)}.st1{fill:#ccc}</style><path class="st0" d="M53.7 26.1V12.5h5.7v13.8c0 2.3 1.2 3.8 4 3.8 2.6 0 3.9-1.6 3.9-3.9V12.5H73v13.6c0 5.3-3.2 8.5-9.6 8.5-6.5.1-9.7-3.1-9.7-8.5zM75.6 17.7h5.1V20h.1c1.2-1.8 2.8-2.7 5.1-2.7 3.6 0 5.7 2.6 5.7 6.3v10.7h-5.3v-9.7c0-1.7-.9-2.9-2.6-2.9-1.7 0-2.9 1.5-2.9 3.5v9.1h-5.3V17.7zM94.3 11.2h5.3v4.3h-5.3v-4.3zm0 6.5h5.3v16.5h-5.3V17.7zM103.7 29.9V22h-2.2v-4.3h2.2v-5.2h5.1v5.2h3V22h-3v6.8c0 1.3.7 1.6 1.8 1.6h1.2v3.8c-.5.1-1.5.3-2.9.3-3 0-5.2-1-5.2-4.6zM115.1 35.6h1.8c1.5 0 2.2-.6 2.2-1.7 0-.7-.3-1.7-1-3.4l-4.9-12.7h5.5l2.2 7c.5 1.6 1 3.8 1 3.8h.1s.5-2.2 1-3.8l2.2-7h5.3l-5.7 16.7c-1.3 3.9-2.9 5.2-6.2 5.2h-3.4l-.1-4.1z"></path><path class="st1" d="M42.5 33.6V11.2L23.1 0v8.6l7.6 4.4c.3.2.3.6 0 .7l-9 5.2c-.3.2-.6.1-.8 0l-9-5.2c-.3-.1-.3-.6 0-.7l7.6-4.4V0L0 11.2v22.4-.1.1l7.4-4.3v-8.8c0-.3.4-.5.6-.4l9 5.2c.3.2.4.4.4.7v10.4c0 .3-.4.5-.6.4l-7.6-4.4-7.4 4.3L21.2 48l19.4-11.2-7.4-4.3-7.6 4.4c-.3.2-.6 0-.6-.4V26.1c0-.3.2-.6.4-.7l9-5.2c.3-.2.6 0 .6.4v8.8l7.5 4.2z"></path><path d="M21.2 48l19.4-11.2-7.4-4.3-7.6 4.4c-.3.2-.6 0-.6-.4V26.1c0-.3.2-.6.4-.7l9-5.2c.3-.2.6 0 .6.4v8.8l7.4 4.3V11.2L21.2 23.5V48z" fill="#a6a6a6"></path><path class="st0" d="M23.1 0v8.6l7.6 4.4c.3.2.3.6 0 .7l-9 5.2c-.3.2-.6.1-.8 0l-9-5.2c-.3-.1-.3-.6 0-.7l7.6-4.4V0L0 11.2l21.2 12.3 21.2-12.3L23.1 0z"></path><path class="st1" d="M16.9 36.9l-7.6-4.4-7.4 4.3L21.3 48V23.5L0 11.2v22.4-.1.1l7.4-4.3v-8.8c0-.3.4-.5.6-.4l9 5.2c.3.2.4.4.4.7v10.4c.1.4-.2.7-.5.5z"></path></svg>
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/c-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/code-org-logo.svg" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/c-sharp-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/html-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/css-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/js-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/node-js-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/java-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide tooBig">
+                <img loading="lazy" src="../Img/overview/roblox-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/lua-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide tooBig">
+                <img loading="lazy" src="../Img/overview/thunkable-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/vscode-logo.svg" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img loading="lazy" src="../Img/overview/python-logo.png" alt="#">
+              </div>
+              <div class="swiper-slide tooBig">
+                <img loading="lazy" src="../Img/overview/blender.png" alt="#">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+
+        <section class="s-register">
+          <div class="register-content">
+            
+            <div class="register-menu" id="register-menu">
+              <button class="r-m-b" id="r-m-b">BEGINNER</button>
+              <button class="r-m-i" id="r-m-i">INTERMEDIATE</button>
+              <button class="r-m-a active" id="r-m-a">ADVANCED</button>
+            </div>
+
+            <div class="register-courses" id="register-courses">
+
+              <div class="r-c r-c-b deactive" id="r-c-b">
+                <div class="swiper s-register-courses-basic-Swiper">
+                  <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                      <div class="card red">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/BEGINNER-1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>Game Development</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>Game Design, Animation, Sprites, Character Behaviour, Loops, Conditionals, Events, and Functions.</p>
+                        </div>
+                        <a href="./courses.html#GameDev">Read More</a>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card green">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/BEGINNER-2.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>Basic App Development</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>App Design, Sequence, Algorithm, Variables, Events, Loops, Conditional, Functions, Image Properties, and Color Properties.</p>
+                        </div>
+                        <a href="./courses.html#BasicAppDev">Read More</a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <div class="r-c r-c-i deactive" id="r-c-i">
+                <div class="swiper s-register-courses-advanced-Swiper">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <div class="card red">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/INTERMEDIATE-1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>Intermediate App Development</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>UI/UX Design, APIs, Object, Database, Arrays, Working with Data, Firebase, Chatbot, Google Maps, and Device Sensors.</p>
+                        </div>
+                        <a href="./courses.html#InterAppDev">Read More</a>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card green">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/INTERMEDIATE-2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>Website Development</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>Website Design, HTML, CSS, Bootstrap, Hosting, Responsiveness, Canvas, Gaming in Canvas, API Usage in Website Development, Database Connection in Website, p5 Editor, AI using Teachable, and JSON.</p>
+                        </div>
+                        <a href="./courses.html#WebDev">Read More</a>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="card yellow">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/INTERMEDIATE-3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>Python Programming</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>Introduction to Python, Data types – Variables, Data Structures, Conditionals, Handling Database, Functions, AI in Python, Python Game, and File Handling.</p>
+                        </div>
+                        <a href="./courses.html#PyDev">Read More</a>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card blue">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/INTERMEDIATE-4.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>Object Oriented Basics(C#, C++, JAVA)</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>OOPS Basics, Java basics, Java Methods, Java Classes, C++ basics, C++ Pointers, C++ OOPS, C++ Compiler, C++ Constructor, C# Basics, C# Methods, and C# Classes.</p>
+                        </div>
+                        <a href="./courses.html#OOPDev">Read More</a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <div class="r-c r-c-a" id="r-c-a">
+                <div class="swiper s-register-courses-advanced-Swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card red">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/ADVANCE-1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>Roblox Game Development</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>Introduction to Roblox Studio, Scripting, Variables, Functions, Conditionals, Loops, Arrays, Player Tools, Collision, Frames, Player Camera, and Particle Effects.</p>
+                        </div>
+                        <a href="./courses.html#RobloxDev">Read More</a>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card green">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/ADVANCE-2.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>3D Game Development (C#)</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>Unity and Unreal Engine, Game Designing, Assets, Animating Sprites, Moving Sprites, and Collision Detection.</p>
+                        </div>
+                        <a href="./courses.html#3DGameDev">Read More</a>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div class="card yellow">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/ADVANCE-3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>Graphics Designing</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>3D Modelling, Polygon Components, Extrude and Bevel, Materials and Lights, Camera Handling, Render Technics, Animation, Keyframes and FPS, and Node Editor.</p>
+                        </div>
+                        <a href="./courses.html#GraphicDes">Read More</a>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card blue">
+                        <div class="img">
+                          <img loading="lazy" src="../Img/overview/ADVANCE-4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                          <h1>AI and Machine Learning</h1>
+                          <p><b>Skills Learned</b></p>
+                          <p>Basics of AI/Machine Learning, Basic Probability, Correlation and Causation, Neural Networks, Basic Data Modelling Techniques, Training Set and Data Set, and Coding in Python.</p>
+                        </div>
+                        <a href="./courses.html#AILearning">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="s-price">
+          <div class="price-content">
+            <div class="header">
+              <div class="header-content">
+                <h1>Available Plans</h1>
+                <br>
+                <p>We offer different plans that all consider the target demographic of children between the ages of 7-15, with this in mind all courses listed are customized to help optimize their efficiency in development. Once purchased, you will have access to the chosen course/s until the subscription ends.</p>
+
+                <a href="./Price-plans.html"></a>
+              </div>
+
+            </div>
+            <div class="prices">
+              <div class="swiper prices-card">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <h1>Free Trial</h1>
+                    <p>Have a little taste of what it means to code.</p>
+                    <br>
+                    <h3>Price:</h3>
+                    <h1>Free</h1>
+                    <br>
+                    <ul>
+                      <h3>What Is Offered:</h3>
+                      <li>&#9745;Account Set-up</li>
+                      <li>&#9745; 1 mounth of any Beginner Course</li>
+                    </ul>
+                    <a href="./Price-plans.html">More Detail</a>
+                    <button>Sign-up</button>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <h4>Most Popular Plan</h4>
+                    <h1>Beginner Individual Plan</h1>
+                    <p>Buy one of the Beginner Courses</p>
+                    <br>
+                    <h3>Price:</h3>
+                    <p>Before: ₱375.00/monthly</p>
+                    <h1><span>30% SALE</span> ₱262.50/month</h1>
+                    <h5>For this Month only</h5>
+                    <br>
+                    <ul>
+                      <h3>What Is Offered:</h3>
+                      <li>&#9745;Account Set-up</li>
+                      <li>&#9745;Access to ALL of the lessons Lessons of 1 Beginner Course</li>
+                    </ul>
+                    <a href="./Price-plans.html">More Detail</a>
+                    <button>Sign-up</button>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <h4>Most Popular Plan</h4>
+                    <h1>Beginner Student Pack</h1>
+                    <p>Buy all of the Beginner Courses</p>
+                    <br>
+                    <h3>Price:</h3>
+                    <p>Before: ₱385.00/monthly</p>
+                    <h1><span>30% SALE</span> ₱269.50/month</h1>
+                    <h5>For this Month only</h5>
+                    <br>
+                    <ul>
+                      <h3>What Is Offered:</h3>
+                      <li>&#9745;Account Set-up</li>
+                      <li>&#9745;Access to All Lessons of the Game Development Course</li>
+                      <li>&#9745;Access to All Lessons of the Basic App Development Course</li>
+                      <li>&#9745;Guaranteed Cancelation within a month</li>
+                    </ul>
+                    <a href="./Price-plans.html">More Detail</a>
+                    <button>Sign-up</button>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <h4>Most Popular Plan</h4>
+                    <h1>Intermediate Student Pack</h1>
+                    <p>Buy all of the Intermediate Courses</p>
+                    <br>
+                    <h3>Price:</h3>
+                    <p>Before: ₱435.00/monthly</p>                    
+                    <h1><span>30% SALE</span> ₱304.50/month</h1>
+                    <h5>For this Month only</h5>
+                    <br>
+                    <h3>What Is Offered:</h3>
+                    <ul class="big-list">
+                      <li>&#9745;Account Set-up</li>
+                      <li>&#9745;Access to All Lessons of the Intermediate App Development Course</li>
+                      <li>&#9745;Access to All Lessons of the Website Development Course</li>
+                      <li>&#9745;Access to All Lessons of the Python Programming Course</li>
+                      <li>&#9745;Access to All Lessons of the Object Oriented Basics in JAVA, C++ and C# Course</li>
+                      <li>&#9745;Guaranteed Cancelation within a month</li>
+                    </ul>
+                    <a href="./Price-plans.html">More Detail</a>
+                    <button>Sign-up</button>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <h1>Educational Bundle</h1>
+                    <p>Buy all Courses</p>
+                    <br>
+                    <h3>Price:</h3>
+                    <h1> ₱350,000/annually</h1>
+                    <br>
+                    <h3>What Is Offered:</h3>
+                    <ul class="big-list">
+                      <li>&#9745;Up To 10,000 Accounts</li>
+                      <li>&#9745;Access to All Lessons of the Game Development Course</li>
+                      <li>&#9745;Access to All Lessons of the Basic App Development Course</li>
+                      <li>&#9745;Access to All Lessons of the Intermediate App Development Course</li>
+                      <li>&#9745;Access to All Lessons of the Website Development Course</li>
+                      <li>&#9745;Access to All Lessons of the Python Programming Course</li>
+                      <li>&#9745;Access to All Lessons of the Object Oriented Basics in JAVA, C++ and C# Course</li>
+                      <li>&#9745;Access to All Lessons of the Advanced App Development Course</li>
+                      <li>&#9745;Access to All Lessons of the Website Development Course</li>
+                      <li>&#9745;Access to All Lessons of the Python Programming Course</li>
+                      <li>&#9745;Access to All Lessons of the Object Oriented Basics in JAVA, C++ and C# Course</li>
+                      <li>&#9745;Guaranteed Cancelation within a year</li>
+                    </ul>
+                    <a href="./Price-plans.html">More Detail</a>
+                    <button>Sign-up</button>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="s-about">
+          <div class="s-about-content">
+            <div class="about-us">
+              <h1>About Our Classes</h1>
+              <br>
+              <p>In 2019, "MADE EASY" was created to give children the foundations to build skills in Computer Science and Computer Engineering. Unlike other platforms which we saw were too simple, too complicated, and unable to properly convey the main points that we believe are essential to the development as a programmer, our platform is dedicated to not only teaching your child/ren different programming languages but also educate them in the proper practices and methods used to help them develop efficiently. In addition, we strongly believe that any thought, any process, any problem that can be solved can be expressed creatively through coding, that's why we prioritize developing your child's Critical Thinking, Problem-Solving, Creativity, and Innovative thinking skills.</p>
+              <br>
+              <a href="./about.html">Learn More</a>
+            </div>
+            <img loading="lazy" src="../Img/overview/about.svg" alt="">
+          </div>
+        </section>
+        
+        <section class="s-facilities">
+          <div class="s-facilities-content">
+            <div class="fas-sec fas-1">
+              <img loading="lazy" src="../Img/overview/fas-1.svg" alt="">
+              <ul>
+                <h3>Live Teacher Student Interaction</h3>
+                <li>1:1 & Group classes</li>
+                <li>Class duration of 60 mins</li>
+                <li>Flexibility for preferred time slots</li>
+                <li>Regular feedback sessions</li>
+                <li>Focus on basics of coding and computer-science</li>
+              </ul>
+            </div>
+            <div class="fas-sec fas-2">
+              <img loading="lazy" src="../Img/overview/fas-2.svg" alt="">
+              <ul>
+                <h3>Self-paced and Adaptive Curriculum</h3>
+                <li>Examples and Projects based on student’s creative interests and curiosity</li>
+                <li>Adjusts to student’s pace of learning and application of a concept</li>
+                <li>Most comprehensive coding and computer-science courses for kids under one roof</li>
+                <li>500+ Hours of pre-made video lessons</li>
+              </ul>
+            </div>
+            <div class="fas-sec fas-3">
+              <img loading="lazy" src="../Img/overview/fas-3.svg" alt="">
+              <ul>
+                <h3>Experienced Teachers</h3>
+                <li>All teachers have Tech background</li>
+                <li>Trained to understand individual learning type and adapt accordingly</li>
+                <li>Enable the child to master the building-blocks of computers and coding</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section class="s-numbers">
+          <div class="s-number-wrapper">
+            <div class="s-number-content">
+              <div class="content-wrapper">
+                <div class="count countries">
+                  <h1>10+</h1>
+                  <h2>Countries</h2>
+                </div>
+                <div class="count classes">
+                  <h1>100,000+</h1>
+                  <h2>Classes</h2>
+                </div>
+                <div class="count students">
+                  <h1>5,000+</h1>
+                  <h2>Active Students</h2>
+                </div>
+                <div class="count students">
+                  <h1>12,000+</h1>
+                  <h2>Total Students</h2>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        
+        <section class="s-testimonials">
+          <div class="testimonial-container">
+            <h1>Testimonials</h1>
+            <div class="swiper testimonialSwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-1.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>India</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I recently enrolled in the beginner's course of Game Development with Javascript and I am having a lot of fun. 
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-3.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>Pakistan</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I was introduced to ME by my school, but I got so used to how easy the learning style was, that I ended up purchasing the advanced pack after my school was over. 
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-4.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>Turkey</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I like how I can show my friends the new software I have created. 
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-5.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>Canada</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      There are a lot of reasons why I would recommend entering the ME program, one of which is the simple fact that it is the easiest Computer Science Course to learn from. 
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-6.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>U.S.A</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I have been subscribed to Made Easy for about 3 years now, and I would come back to the lessons now and again if ever I am working on an independent project and need guidance. 
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-7.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>India</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I just started the beginner's course a few months back, and now I am one of the lead programmers in my school. Thank you ME
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-8.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>U.A.E</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I'll be graduating from Junior Highschool soon and looking back, I can confidently say that I have learned more about computer science than any other program out there.
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-9.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>U.K</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      Easy to Understand, the assignments given are challenging and yet fun, and the lectures are engaging and very informative, ME is the best computer science learning program out there!
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-10.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>Norway</p>
+                    </span>
+                  </div>
+                  <div class="content-right tobig">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I found most computer science courses to be intimidating, so I would usually shy away from coding or improving my skills, but "ME" made it easy to understand the fundamental concepts clearly and in a manner wherein I can understande them. 
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-11.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>Philippines</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I took coding as a hobby, but "ME" made my hobby a profession. 
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-12.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>Singapore</p>
+                    </span>
+                  </div>
+                  <div class="content-right tobig">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I've been learning 3D modeling and 3D game development in "ME" for a while now, and I can say that this has been one of the best learning experiences I had in my life. The UI is simple to understand as well as the lectures, and if you don't understand a topic, you can equal or contact the IT department for clarifications. 
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-13.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>Saudi Arabia</p>
+                    </span>
+                  </div>
+                  <div class="content-right">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      My school just recently integrated the "ME" program into our ICT curriculum and I noticed from then to this point on, I have been more interested in the field of computer science because of it. 
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="content-left">
+                    <img loading="lazy" src="../Img/overview/Testimonials/user-14.jpg" alt="">
+                    <span>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="space">..</div>
+                      <p>Philippines</p>
+                    </span>
+                  </div>
+                  <div class="content-right tobig">
+                    <h1>Student</h1>
+                    <p>
+                      <span>"</span>
+                      I was not the brightest student in my class, so when our school announced that they would be implementing the "ME" program, I just thought it would be another subject I would be average at. I will be graduating Senior High School Soon with the award of Prorammer of the year and being the Science Club President(2021-2022) under my name.  
+                      <span>"</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="s-sign-up">
+          <div class="sign-up-container">
+            <h1>Sign up for free Parent's guide on coding & monthly newsletter</h1>
+            <div class="s-sign">
+              <div class="top">
+                <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                <input class="input-field" type="text" placeholder="Email" name="email">
+              </div>
+              <div class="bottom">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <button>Sign Up</button>
+              </div>     
+            </div>
+          </div>
+        </section>
+
+        <section class="s-questions">
+          <h1>Frequently Asked Questions</h1>
+          <div class="inst">
+            <div class="box_wrapper box1" id="box1">
+              <div class="title">
+                <h1>Why should my kid learn coding?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>Today, coding courses are as essential as mathematics, science, and sports. Fundamentally, coding enhances the ability to convert imagination into reality. It enhances critical thinking, problem-solving, imagination, ability to apply mathematics and logic, ability to focus for long periods, and detail-orientation in a practical way. These are all extremely productive skills for the overall development of kids preparing for the future. Also, we believe coding can be recreational just like sports for some kids and we need to give that opportunity to all kids.</p>
+              </div>
+            </div>
+
+            <div class="box_wrapper box2" id="box2">
+              <div class="title">
+                <h1>Should kids learn coding if they don’t plan for careers in Technology?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>Yes, they should. Coding is not a specific skill for a specific career path anymore. It teaches the way of life just like sports. It imparts the ability to convert imagination to reality. Coding develops critical thinking, focusing for long periods, logical ability, creativity, and problem-solving in children that are important for any career and more importantly for a productive development of kids. Crucially, it also adds the creator’s point of view of any technology rather being only consumers of technology. Just like sport, it is also recreation for some individuals. Coding helps in the overall development of kids getting ready for the future.</p>
+              </div>
+            </div>
+
+            <div class="box_wrapper box3" id="box3">
+              <div class="title">
+                <h1>My kids are learning computer science at school. Why should they enrol at MADE EASY?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>Learning computer science at school is amazing! Almost all curriculums across the world have made coding and computer science mandatory. Computer Science learning goals at school is wonderful and is really a progressive move by schools across the world.
+
+                We at MADE EASY specialize in 1:1 focus for your child to master the concepts of computer science and specifically programming. We augment with school taught curriculums extremely well and help the child gain that extra edge in practical applicability of what they’re learning. Often schools don’t have time to focus on practical applicability of computer science and programming.</p>
+              </div>
+            </div>
+
+            <div class="box_wrapper box4" id="box4">
+              <div class="title">
+                <h1>My child is quite young. Will he or she understand the concepts?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>As coding is largely a practical learning with projects and interest-based applications, we witnessed that kids of all age-group successfully grasp coding and enjoy developing various projects and applying the concepts learnt in a practical way.
+
+                Our instructors adapt accordingly to the kid and use examples and problems that the specific kid can relate to in his or her surroundings, school, and developmental environments. We saw that coding can be taught to kids ranging from 6 years old onwards successfully across the world. For younger kids, we typically start with block-based coding where the focus is more in developing logical and algorithmic thinking rather than syntax.</p>
+              </div>
+            </div>
+
+            <div class="box_wrapper box5" id="box5">
+              <div class="title">
+                <h1>How is the feedback to parent provided?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>We arrange monthly feedback sessions with parents. We discuss in detail the progress of the kid on: understanding the concept, applying the concept, independently writing the code, exploring new ideas and trying to build his or her own apps.</p>
+              </div>
+            </div>
+
+            <div class="box_wrapper box6" id="box6">
+              <div class="title">
+                <h1>What level of projects will my kid do?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>For example, our students have applied the concepts learnt and projects done in various national and school competitions and won prizes in these competitions. Our students were able to do this by the kind of projects we do with children during courses. These projects will include developing games, developing apps for specific use-cases, and developing websites. You can browse through the various projects done in here.</p>
+              </div>
+            </div>
+
+            <div class="box_wrapper box7" id="box7">
+              <div class="title">
+                <h1>Which coding languages can my kid learn at MADE EASY?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>At MADE EASY, we start with various levels of courses: Basic, Intermediate and Advanced courses for various age-groups and for kids at various learning levels. We offer the entire range of courses starting from block-based coding to an intermediate to advanced courses. Kids will learn Scratch, JavaScript, HTML, CSS, Game Development, Website Development, App Development, Python, Unity, MINECRAFT, Lua, C++, C# and Java.</p>
+              </div>
+            </div>
+
+            <div class="box_wrapper box8" id="box8">
+              <div class="title">
+                <h1>Where is MADE EASY based?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>MADE EASY is based in Iligan City, Mindanao, Philippines</p>
+              </div>
+            </div>
+
+            <div class="box_wrapper box9" id="box9">
+              <div class="title">
+                <h1>Are these courses pre-recorded/self-paced or are these live courses?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>Made Easy provides multiple different types of modalities and it is up to the students to choose how they would like to learn. For instance, We can provide a 1:1 class, a fully online class, or a mix of both. We also have over 400 hours worth of content in our video library for students to use.</p>
+              </div>
+            </div>
+            
+            <div class="box_wrapper box10" id="box10">
+              <div class="title">
+                <h1>Do you have a free trial period?</h1>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+              <div class="dis">
+                <p>Yes, we have a free trial of all our classes. You can get in touch at +1234567890 (Philippines) or click the “Free Trial” button above and register for a free trial of any of course offered</p>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="footer-bg"></section>
+      </div>
+
+      <footer class="overview">
+        <div class="wave"></div>
+        <div class="main">
+          <div class="dis b">
+            <div class="logo">
+              <img loading="lazy" src="../Img/Logo.svg" alt="">
+              <h1>MADE EASY</h1>
+            </div>
+            <p>MADE EASY strives to make coding a skill set and tool to understand and appreciate every technology that a child consumes in today’s world.</p>
+            <a href="./header-page.html">Read More</a>
+            <div class="social-links">
+              <a href="./404.html"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="./404.html"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="./404.html"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="quick-links b">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="./404.html">My account</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./404.html">Institutions</a></li>
+              <li><a href="./404.html">Terms & Conditions</a></li>
+              <li><a href="./404.html">Privacy Policy</a></li>
+              <li><a href="./404.html">Cancellation and Refund Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="courses-links b">
+            <h1>Courses</h1>
+            <ul>
+              <li><a href="./courses.html#sec-b">Basic</a></li>
+              <li><a href="./courses.html#sec-i">Intermediate</a></li>
+              <li><a href="./courses.html#sec-a">Advanced</a></li>
+            </ul>
+          </div>
+
+          <div class="quick-links b">
+            <h1>Get in Touch</h1>
+            <ul>
+              <li>+123-456-7890(Philippines)</li>
+              <li>r.bamba@lsa.ph</li>
+              <li>Iligan City, Mindanao, Philippines</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright © 2022 <span>GROUP 14</span>. All Rights Reversed | Designed by <span>ROBERT ANDREI N. BAMBA</span></p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+  <script src="../Scripts/sale-timer.js"></script>
+  <script src="../Scripts/nav.js"></script>
+  <script src="../Scripts/overview.js"></script>
+</body>
+</html>
