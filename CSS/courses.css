@@ -326,6 +326,9 @@
   justify-content: center;
   align-items: center;
   background: chocolate;
+}
+
+.course-content>.course-container>.card>.card-container>.card-right>.card-resources>.duration h1 {
   color: #fff;
 }
 

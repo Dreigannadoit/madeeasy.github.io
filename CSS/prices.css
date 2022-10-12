@@ -1,227 +1,399 @@
+.nav_container {
+  box-shadow: rgba(0, 0, 0, 0.0) 0px 5px 15px;
+}
+
+.menu_dropdown {
+  box-shadow: rgba(0, 0, 0, 0) 0px 10px 15px;
+}
+
 .price-plans {
-  top: 330%;
+  top: 310%;
 }
 
 .header {
-  height: 90%;
-  background: url("../Img/Waves/courses-bg.svg")no-repeat center center/cover;
+  height: 190%;
 }
 
-.header-content {
-  height: 100%;
+.header>.intro {
+  height: 50%;
   width: 100%;
+  background: url("../Img/Waves/courses-bg.svg")no-repeat center 55%/cover;
 }
 
-.header-content>.opt {
+.header>.intro>.intro-sec {
   position: absolute;
-  bottom: 0;
+  top: 5%;
   left: 0;
-  height: 80%;
+  height: 40%;
   width: 100%;
-  padding: 5%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 1000ms;
+  transition: 500ms;
 }
 
-.header-content>.hidden {
+.header>.intro>.intro-individual.hidden {
+  left: -100%;
+}
+
+.header>.intro>.intro-student.hidden {
   left: 100%;
 }
 
-.header-content>.opt .img {
+.header>.intro>.intro-sec .main-content,
+.header>.intro>.intro-sec .img {
   position: relative;
   height: 100%;
-  width: 48%;
-  overflow: hidden;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-content>.opt .img img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 90%;
-  width: 94%;
-  object-fit: cover;
-  z-index: 99;
-  transition: all 500ms;
+.header>.intro>.intro-sec .main-content .main-content-container {
+  height: 100%;
+  width: 75%;
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.header-content>.opt .img .bg {
+.header>.intro>.intro-sec .main-content .main-content-container h3 {
+  font-size: 2rem;
+  color: #d31818;
+  margin: 3px 0;
+}
+
+
+.header>.intro>.intro-sec .main-content .main-content-container h1 {
+  font-size: 3.9rem;
+  line-height: 110%;
+  margin: 3px 0;
+}
+
+.header>.intro>.intro-sec .main-content .main-content-container a {
+  background: rgb(48, 106, 194);
+  width: 230px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  transition: 300ms;
+}
+
+.header>.intro>.intro-sec .main-content .main-content-container a:hover {
+  box-shadow: rgba(50, 50, 93, 0.7) 0px 13px 27px -5px, rgba(0, 0, 0, 0.8) 0px 8px 16px -8px;
+}
+
+.header>.intro>.intro-sec .main-content .main-content-container a span {
+  color: #ebebeb;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 500ms;
+}
+
+.header>.intro>.intro-sec .main-content .main-content-container a:hover span {
+  text-shadow:
+    rgba(50, 50, 93, 0.9) 0px 2px 5px,
+    rgba(0, 0, 0, 0.7) 0px 1px 3px;
+}
+
+.header>.intro>.intro-sec .main-content .main-content-container button {
+  margin-top: 3%;
+  font-size: 3rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header>.intro>.intro-sec .img {
+  height: 100%;
+  width: 50%;
+}
+
+.header>.intro>.intro-sec .img .backdrop {
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 90%;
-  width: 90%;
+  bottom: 110px;
+  right: 12%;
+  width: 80%;
+  height: 70%;
   background-image:
     radial-gradient(#ebebeb 20%, transparent 20%);
   background-color: transparent;
-  background-position: 0 0, 50px 50px;
-  background-size: 20px 20px;
-  isolation: isolate;
+  background-position: 0 0, 25px 25px;
+  background-size: 12px 12px;
 }
 
-.header-content>.opt .img img:hover {
-  height: 105%;
-  width: 105%;
-}
-
-.header-content>.opt .main-header-content {
-  width: 48%;
-}
-
-.header-content>.opt .main-header-content h1 {
-  font-size: 5.5rem;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: #ebebeb;
-}
-
-.header-content>.opt .main-header-content p {
-  font-size: 1rem;
-  line-height: 150%;
-  text-transform: uppercase;
-  margin: 10px 0px;
-}
-
-.header-content>.opt .main-header-content button {
-  position: relative;
-  width: 150px;
-  border: none;
-  padding: 10px 5px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;
-  background-color: #db1630;
-  transition: 500ms ease;
-  border-radius: 2.5px;
-  overflow: hidden;
-  margin: 10px 0px;
-}
-
-.header-content>.opt .main-header-content button:hover {
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
-  padding: 10px 5px;
-}
-
-.header-content>.opt .main-header-content button::before {
-  content: "";
-  height: 100%;
-  width: 100%;
+.header>.intro>.intro-sec .img img {
   position: absolute;
-  top: 0%;
-  left: 100%;
-  background: rgb(255, 132, 0);
-  background: linear-gradient(270deg, rgb(255, 85, 0) 0%, rgba(219, 22, 48, 0.8) 100%);
-  z-index: 0;
-  transition: 500ms ease;
+  bottom: 35px;
+  left: 0;
+  width: 80%;
+  object-fit: cover;
 }
 
-.header-content>.opt .main-header-content button:hover:before {
-  top: 0%;
-  left: 0%;
-}
-
-.header-content>.opt .main-header-content button a {
-  color: #fff;
-  height: 100%;
-  width: 100%;
-  isolation: isolate;
-  z-index: 999;
-  font-size: 18px;
-  font-weight: 600;
-  transition: 500ms ease;
-}
-
-.header-content>.opt .main-header-content button a span {
-  transition: 500ms ease;
-}
-
-.header-content>.opt .main-header-content button:hover a span {
-  text-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
-  font-size: 19px;
-}
-
-
-
-.price-content {
-  height: 85%;
-  background: #dfd630;
-  transition: all 1000s;
-}
-
-.price-content>.price-content-container {
-  height: 100%;
+.header>.main-price-plan {
+  position: relative;
+  height: 50%;
   width: 100%;
   background: #dfd630;
 }
 
-.price-content>.price-content-container .sec {
+.header>.main-price-plan>.price-card-containers {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 0 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms 150ms;
 }
 
-.price-content>.price-content-container .hidden {
+.header>.main-price-plan>.price-inividual.hidden {
+  left: -100%;
+}
+
+.header>.main-price-plan>.price-student.hidden {
   left: 100%;
 }
 
-.price-content>.price-content-container .sec-individual {
+.header>.main-price-plan>.price-card-containers .card-price-container {
+  height: 100%;
+  width: 88%;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container {
+  background: transparent;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .mini-nav {
+  height: 15%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  flex-direction: column;
-  overflow: none;
 }
 
-.price-content>.price-content-container .sec-individual .mini-course-nav {
-  height: 15%;
-  width: 100%;
-  background: #db6f16;
+.header>.main-price-plan>.price-inividual .card-price-container .mini-nav button {
+  padding: 10px 5px;
+  width: 130px;
+  border: none;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.price-content>.price-content-container .sec-individual .card-prices {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container {
+  position: relative;
   height: 85%;
   width: 100%;
   overflow: hidden;
 }
 
-.price-content>.price-content-container .sec-individual .card-prices .card-prices-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-
-  transform: translate(-10%);
+.header>.main-price-plan>.price-inividual .card-price-container .card-container.animateTransition::before {
+  content: attr(data-content);
+  position: absolute;
+  width: 0%;
+  font-size: 5vh;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: aliceblue;
+  animation: transitionCard 1000ms;
+  z-index: 99999;
 }
 
-.price-content>.price-content-container .sec-individual .card-prices .card-prices-container .price-course {
+@keyframes transitionCard {
+  0% {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  80% {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+}
+
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content {
   position: absolute;
   top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  transition: 200ms 500ms;
 }
 
-.price-content>.price-content-container .sec-individual .card-prices .card-prices-container .begginer-courses {
-  left: 0;
-  background: #04a5aa;
-}
-
-.price-content>.price-content-container .sec-individual .card-prices .card-prices-container .intermediate-courses {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content.hidden {
   left: -100%;
-  background: #7c1f1f;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
-.price-content>.price-content-container .sec-individual .card-prices .card-prices-container .advance-courses {
-  left: -200%;
-  background: #db1630;
+/* .header>.main-price-plan>.price-inividual .card-price-container .card-container .price-card-section-beginner {
+  background: #aa0404;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .price-card-section-intermediate {
+  background: #0489aa;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .price-card-section-advanced {
+  background: #2baa04;
+} */
+
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card {
+  position: relative;
+  height: 100%;
+  width: 24.5%;
+  border-top: 7px solid #000;
+  padding: 15px;
+  background-image:
+    radial-gradient(#e6e6e6cb 20%, transparent 20%);
+  background-color: #ffffff;
+  background-position: 0 0, 50px 50px;
+  background-size: 10px 10px;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card.dummy {
+  visibility: hidden;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper h3 {
+  font-size: 22px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag {
+  width: 100%;
+  background: #db6f16;
+  padding: 15px 5px;
+  margin-top: 5%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>h2 {
+  font-size: 18px;
+  color: #ebebeb;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>span {
+  background: #aa0404;
+  padding: 5px 10px;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ebebeb;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>h1 {
+  font-size: 26px;
+  color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>h1>span {
+  font-size: 28px;
+  color: #aa0404;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper span {
+  font-size: 9px;
+  color: #8f8f8f;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper ul {
+  margin-top: 5%;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper ul li {
+  margin: 0 15px;
+  font-size: 17px;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .links {
+  position: absolute;
+  bottom: 0;
+  padding: 40px 0px;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .links a {
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ebebeb;
+  border-radius: 5px;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .purchase {
+  background-color: #aa0404;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .more-info {
+  background-color: #0489aa;
 }
 
 
+
+
+.header>.main-price-plan>.price-student .card-price-container {
+  background: #690606;
+}
 
 
 
@@ -337,16 +509,17 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  color: aliceblue;
 }
 
 .educational-option>.edu-container h1 {
   font-size: 5rem;
   line-height: 100%;
+  color: aliceblue;
 }
 
 .educational-option>.edu-container h3 {
   font-size: 18px;
+  color: aliceblue;
 }
 
 .educational-option>.edu-container a {

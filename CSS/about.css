@@ -19,6 +19,7 @@
 .top h1,
 .top p {
   padding-left: 50px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .top h1 {
@@ -82,6 +83,7 @@
 
 .ceo>h1 {
   font-size: 90px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .ceo>.card {
@@ -290,15 +292,18 @@
   font-size: 50px;
   font-weight: 800;
   line-height: 150%;
+  color: rgba(255, 255, 255, 1);
 }
 
 .location>.location-container>.left-content h1 span {
   font-size: 90px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .location>.location-container>.left-content p {
   font-size: 18px;
   letter-spacing: 2px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .location>.location-container>.right-content {
@@ -330,15 +335,20 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 80%;
+  height: 90%;
   width: 90%;
-  background: rgba(255, 255, 255, 0.5);
+  background-image:
+    radial-gradient(#ebebeb 20%, transparent 20%);
+  background-color: transparent;
+  background-position: 0 0, 25px 25px;
+  background-size: 12px 12px;
   transition: 500ms;
 }
 
 .location>.location-container>.right-content:hover>.bg {
   bottom: 10%;
   right: 5%;
+  height: 80%;
 }
 
 

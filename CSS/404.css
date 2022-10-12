@@ -1,5 +1,9 @@
+.c404 {
+  top: 150%;
+}
+
 .PageNotfound {
-  height: 110%;
+  height: 160%;
   background: url("../Img/Waves/about.svg")no-repeat center bottom/cover;
   display: flex;
   justify-content: center;
@@ -7,7 +11,7 @@
 }
 
 .content-container {
-  height: 70%;
+  height: 80%;
   width: 90%;
   background: rgba(255, 237, 213, 0.9);
   background: linear-gradient(0deg, rgba(255, 237, 213, 0.9), rgba(255, 237, 213, 0.9)), url('../Img/Backgrounds/bg-all.jpg') no-repeat center center/cover;
@@ -15,6 +19,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.content-container img {
+  height: 50%;
+  margin: 10px 0;
 }
 
 .content-container h1:nth-child(1) {

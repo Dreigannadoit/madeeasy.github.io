@@ -293,6 +293,10 @@ nav.sticky .menu_dropdown {
   background: rgba(9, 89, 142, 0.8);
 }
 
+.menu_dropdown .mdd h1 {
+  color: rgb(255, 239, 218);
+}
+
 .menu_dropdown .mdd ul {
   list-style: none;
 }
