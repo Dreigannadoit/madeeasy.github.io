@@ -1,3 +1,6 @@
+<!-- 
+  Credits to Codeacademy for the design Template. Inspired Page Layout. 
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/aae9a197da.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <link
     rel="stylesheet"
@@ -23,8 +28,8 @@
   <link rel="stylesheet" href="../CSS/defaults.css">
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/fixed.css">
-  <link rel="stylesheet" href="../CSS/prices.css">
   <link rel="stylesheet" href="../CSS/nav-bar.css">
+  <link rel="stylesheet" href="../CSS/prices.css">
   <link rel="stylesheet" href="../CSS/footer.css">
 
 </head>
@@ -204,65 +209,321 @@
         </a>
 
         <section class="header">
+          <div class="intro">
+            <div class="intro-sec intro-individual" id="individualIntro">
+              <div class="main-content">
+                <div class="main-content-container">
+                  <h3>Individual Plan</h3>  
+                  <h1>Find your passion</h1>
+                  <p>Build in-demand technical skills for work or a personal project
+                  </p>
+                  <a href="#buttonRight"><span>Start Free Trail</span> </a>
 
-          <div class="header-content" id="header-content">
-            <div class="opt opt-individual"  id="opt-individual">     
-              <div class="main-header-content">
-                <h1>Individaual Plan</h1>
-                <p>Our "Individual Plan" caters to people who want to get into Computer Science but only a few aspects of it at a time.</p>
-                <button>
-                  <a href="#price-content">Start for <span>Free</span></a>
-                </button>
+                  <button id="buttonRight">
+                    <i class="fa-solid fa-forward"></i>
+                  </button>
+                </div>
               </div>
 
               <div class="img">
-                <img loading="lazy" src="../Img/prices/individual.jpg" alt="#">
-                <div class="bg"></div>
+                <div class="backdrop"></div>
+                <img loading="lazy" src="../Img/prices/individual.jpg" alt="">
               </div>
             </div>
-
-            <div class="opt opt-student hidden"  id="opt-student">
-              <div class="main-header-content">
-                <h1>Student Plan</h1>
-                <p>Our "Student Plan" caters to people who want to get into Computer Science with the expectation to be the best of the best.</p>
-                <button>
-                  <a href="#price-content">Start for <span>Free</span></a>
-                </button>
+ 
+            <div class="intro-sec intro-student hidden" id="studentIntro">
+              <div class="main-content">
+                <div class="main-content-container">
+                  <h3>Student Plan</h3>  
+                  <h1>Learn what you love</h1>
+                  <p>Made Easy  gives you the tools you need to discover and pursue your passions through programming</p>
+                  <a href="#buttonRight"><span>Start Free Trail</span> </a>
+                  
+                  <button id="buttonLeft">
+                    <i class="fa-solid fa-backward"></i>
+                  </button>
+                </div>
               </div>
-              
-              <div class="img" >
-                <img loading="lazy" src="../Img/prices/student.jpg" alt="#">
-                <div class="bg"></div>
+
+              <div class="img">
+                <div class="backdrop"></div>
+                <img loading="lazy" src="../Img/prices/educational.jpg" alt="">
               </div>
             </div>
           </div>
-        </section>
 
-        <section class="price-content" id="price-content">
-          <div class="price-content-container">
-            <div class="sec sec-individual" id="sec-individual">
-              <div class="mini-course-nav">
-                <botton>Begginer</botton>
-                <botton>Intermediate</botton>
-                <botton>Advance</botton>
-              </div>
-              <div class="card-prices">
-                <div class="card-prices-container">
-                  <div class="price-course begginer-courses">
-                  </div>
-                  <div class="price-course intermediate-courses">
-                  </div>
-                  <div class="price-course advance-courses">
+
+          <div class="main-price-plan" id="mainPrices">
+            <div class="price-card-containers price-inividual" id="individualPriceContainer">
+              <div class="card-price-container">
+                <div class="mini-nav">
+                  <button id="buttonBeginner">BEGINNER</button>
+                  <button id="buttonIntermediate">INTERMEDIATE</button>
+                  <button id="buttonAdvanced">ADVANCED</button>
+                </div>
+
+                <div class="card-container" id="cardContainer">
+                  <div class="card-container-content price-card-section-beginner" id="sectionBeginner">
+                    
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>FREE TRIAL</h3>
+                        <div class="price-tag">
+                          <h1><span>FREE</span></h1>
+                        </div>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>Half of all leasson any courses in the Beginner Courses</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+                        
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>Game Development</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱375/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱262.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href="./courses.html#GameDev">Game Development</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#GameDev" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>App Development</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱375/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱262.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href="./courses.html#BasicAppDev">App Development</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#BasicAppDev" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
 
+                  <div class="card-container-content price-card-section-intermediate hidden" id="sectionIntermediate">
+
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>Intermediate App Development</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱425/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱297.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href="./courses.html#InterAppDev">Intermediate App Development</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#InterAppDev" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>Website Development</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱425/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱297.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href="./courses.html#WebDev">Website Development</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#WebDev" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>Python Programming</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱425/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱297.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href="./courses.html#PyDev">Python Programming</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#courses.html#PyDev" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>Object Oriented Basics in JAVA, C++ and C#</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱425/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱297.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href="./courses.html#PyDev">Object Oriented Basics in JAVA, C++ and C#</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#courses.html#PyDev" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-container-content price-card-section-advanced hidden" id="sectionAdvanced">
+
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>Roblox Game Development</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱475/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱332.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href="./courses.html#RobloxDev">Roblox Game Development</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#RobloxDev" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>3D Game Development</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱425/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱297.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href=".courses.html#3DGameDev">3D Game Development</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#3DGameDev" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>Graphics Designing</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱425/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱297.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href="./courses.html#GraphicDes">Graphics Designing</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#GraphicDes" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-wrapper">
+                        <h3>AI and Machine Learning</h3>
+                        <div class="price-tag">
+                          <h2>Was: ₱425/month</h2>
+                          <span>SALE 30%</span>
+                          <h1>NOW:<span>₱297.50/month</span></h1>
+                        </div>
+                        <span>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></span>
+                        <ul>
+                          <h3>What is Offered</h3>
+                          <li>All leasson in the <a href="./courses.html#AILearning">AI and Machine Learning</a> course</li>
+                          <li>Account set up</li>
+                          <li>Data Transfer(For those with accounts already)</li>
+                        </ul>
+                        <div class="links">
+                          <a href="./log-in.html" class="purchase">Register</a>
+                          <a href="./courses.html#AILearning" class="more-info">More Info</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="sec sec-student hidden" id="sec-student">
+            <div class="price-card-containers price-student hidden" id="studentPriceContainer">
+
+              <div class="card-price-container">
+                
+              </div>
             </div>
           </div>
         </section>
+
         <section class="sale-info">
           <p>The payment is given monthly but billed anually.Thus the discount given is within one month. Read more in our <a href="./404.html">Terms of Service</a></p>
         </section>
@@ -344,5 +605,6 @@
   
   <script src="../Scripts/sale-timer.js"></script>
   <script src="../Scripts/nav.js"></script>
+  <script src="../Scripts/pricePage.js"></script>
 </body>
 </html>
