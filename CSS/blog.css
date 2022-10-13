@@ -1,5 +1,13 @@
 .blog {
-  top: 250%;
+  top: 300%;
+}
+
+h3 {
+  color: #04a5aa;
+}
+
+p {
+  color: rgb(58, 58, 58);
 }
 
 .header {
@@ -19,13 +27,239 @@
 }
 
 
-.recent {
-  height: 90%;
+.blog-posts {
+  height: 230%;
   background: linear-gradient(0deg, rgba(255, 212, 151, 0.8), rgba(255, 212, 151, 0.8)), url('../Img/Backgrounds/bg-all.jpg') no-repeat center bottom/cover;
-  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-posts .recent {
+  height: 50%;
+  width: 90%;
+}
+
+.blog-posts .recent .head-title {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blog-posts .recent .head-title h1 {
+  font-size: 3rem;
+}
+
+.blog-posts .recent .main-recent-story {
+  height: 85%;
+  width: 100%;
+}
+
+.main-recent-story-container {
+  height: 100%;
+  width: 100%;
+}
+
+.main-recent-story-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.main-recent-story-container .swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Center slide text vertically */
+  width: 100%;
+  height: 100%;
+}
+
+.main-recent-story-container .swiper-slide .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    radial-gradient(#ebebeb 20%, transparent 20%);
+  background-color: transparent;
+  background-position: 0 0, 25px 25px;
+  background-size: 12px 12px;
+}
+
+.main-recent-story-container .swiper-slide .card .img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  transition: 700ms;
+}
+
+.main-recent-story-container .swiper-slide .card:hover .img {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.main-recent-story-container .swiper-slide .card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-recent-story-container .swiper-slide .card .card-content {
+  position: absolute;
+  top: 53%;
+  width: 90%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: 700ms;
+}
+
+.main-recent-story-container .swiper-slide .card:hover .card-content {
+  top: 4%;
+}
+
+.main-recent-story-container .swiper-slide .card .card-content p {
+  text-align: left;
+}
+
+.main-recent-story-container .swiper-slide .card .card-content h1 {
+  text-align: left;
+}
+
+.main-recent-story-container .swiper-slide .card .read-more {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  background-color: #db1630;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-recent-story-container .swiper-slide .card .read-more a {
+  color: #fff;
 }
 
 
-.recent>h1 {
+.blog-posts .old {
+  height: 50%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-posts .old .old-container {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.blog-posts .old .old-container>h1 {
   font-size: 3rem;
+}
+
+.blog-posts .old .old-container .row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-posts .old .old-container .row .card {
+
+  position: relative;
+  height: 100%;
+  width: 24%;
+  background-image:
+    radial-gradient(#ebebeb 20%, transparent 20%);
+  background-color: #fff;
+  background-position: 0 0, 25px 25px;
+  background-size: 12px 12px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.blog-posts .old .old-container .row .card .img {
+  height: 40%;
+  width: 100%;
+  transition: 700ms;
+}
+
+.blog-posts .old .old-container .row .card:hover .img {
+  height: 100%;
+  opacity: 0.2;
+}
+
+.blog-posts .old .old-container .row .card .img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.blog-posts .old .old-container .row .card .card-content {
+  position: absolute;
+  top: 42%;
+  left: 0;
+  height: 40%;
+  width: 90%;
+  padding: 0 15px;
+  transition: 700ms;
+}
+
+.blog-posts .old .old-container .row .card:hover .card-content {
+  top: 15px;
+}
+
+.blog-posts .old .old-container .row .card .read-more {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  background-color: #db1630;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-posts .old .old-container .row .card .read-more a {
+  color: #fff;
+}
+
+.blog-posts .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../Img/Waves/blog-older-bottom.svg")no-repeat center bottom/cover;
+}
+
+
+
+.load {
+  height: 10%;
+  background: #dfd630;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }

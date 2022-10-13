@@ -106,6 +106,26 @@
   border: none;
   background: transparent;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #db6f16;
+}
+
+.header>.intro>.intro-sec .main-content .main-content-container button i {
+  margin: 0 3%;
+}
+
+.header>.intro>.intro-sec .main-content .main-content-container button span {
+  font-size: 16px;
+  background: #db6f16;
+  padding: 10px 5px;
+  width: 250px;
+
+}
+
+.header>.intro>.intro-sec .main-content .main-content-container button span {
+  color: #ffffff;
 }
 
 .header>.intro>.intro-sec .img {
@@ -280,7 +300,16 @@
 } */
 
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card {
+.header>.main-price-plan>.price-student .card-price-container {
+  height: 100%;
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card,
+.header>.main-price-plan>.price-student .card-price-container .card {
   position: relative;
   height: 100%;
   width: 24.5%;
@@ -293,11 +322,18 @@
   background-size: 10px 10px;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card.dummy {
+.header>.main-price-plan>.price-student .card-price-container .card {
+  width: 30%;
+
+}
+
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card.dummy,
+.header>.main-price-plan>.price-student .card-price-container .card.dummy {
   visibility: hidden;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper {
   height: 100%;
   width: 100%;
   display: flex;
@@ -306,13 +342,15 @@
   flex-direction: column;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper h3 {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper h3,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper h3 {
   font-size: 22px;
   width: 100%;
   border-bottom: 1px solid grey;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper .price-tag {
   width: 100%;
   background: #db6f16;
   padding: 15px 5px;
@@ -324,12 +362,14 @@
   flex-direction: column;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>h2 {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>h2,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper .price-tag>h2 {
   font-size: 18px;
   color: #ebebeb;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>span {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>span,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper .price-tag>span {
   background: #aa0404;
   padding: 5px 10px;
   margin: 5px 0;
@@ -338,7 +378,8 @@
   color: #ebebeb;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>h1 {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>h1,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper .price-tag>h1 {
   font-size: 26px;
   color: #ebebeb;
   display: flex;
@@ -347,32 +388,38 @@
   flex-direction: column;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>h1>span {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .price-tag>h1>span,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper .price-tag>h1>span {
   font-size: 28px;
   color: #aa0404;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper span {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper span,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper span {
   font-size: 9px;
   color: #8f8f8f;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper ul {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper ul,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper ul {
   margin-top: 5%;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper ul li {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper ul li,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper ul li {
   margin: 0 15px;
   font-size: 17px;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .links {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .links,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper .links {
   position: absolute;
   bottom: 0;
   padding: 40px 0px;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .links a {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .links a,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper .links a {
   padding: 5px 10px;
   font-size: 20px;
   font-weight: 600;
@@ -380,20 +427,17 @@
   border-radius: 5px;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .purchase {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .purchase,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper .purchase {
   background-color: #aa0404;
 }
 
-.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .more-info {
+.header>.main-price-plan>.price-inividual .card-price-container .card-container .card-container-content .card .card-wrapper .more-info,
+.header>.main-price-plan>.price-student .card-price-container .card .card-wrapper .more-info {
   background-color: #0489aa;
 }
 
 
-
-
-.header>.main-price-plan>.price-student .card-price-container {
-  background: #690606;
-}
 
 
 
