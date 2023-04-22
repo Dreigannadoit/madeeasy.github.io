@@ -117,7 +117,7 @@
 
 .wrapper .nav-container .nav nav ul {
   position: absolute;
-  right: -5px;
+  right: -50px;
   height: 100%;
   width: 100%;
   display: flex;
