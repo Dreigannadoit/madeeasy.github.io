@@ -6,6 +6,11 @@
   transition: 0.8s;
 }
 
+.wrapper .mobile-nav {
+  visibility: hidden;
+  display: none;
+}
+
 .wrapper .nav-container.sticky {
   background-color: #41644A;
   height: 10%;
@@ -197,4 +202,47 @@
 
 .wrapper .nav-container.sticky .nav nav ul li a::before {
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper .nav-container {
+    display: none;
+  }
+
+  .wrapper .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #41644A;
+    z-index: 9999999;
+
+    visibility: visible;
+    display: block;
+
+    padding: 10% 5%;
+  }
+
+  .wrapper .mobile-nav .ham {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .wrapper .mobile-nav .ham h1 {
+    font-size: 5rem;
+  }
+
+
+  .wrapper .mobile-nav .ham p {
+    font-size: 4.5rem;
+  }
+
+
 }
