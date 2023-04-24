@@ -128,11 +128,16 @@
   display: flex;
   align-items: center;
 }
-
-.wrapper .nav-container .nav nav ul li {
+.wrapper .nav-container .nav nav ul li{
   transform: translateX(35%);
   display: inline;
   padding: 4%;
+  padding: 5px;
+  transition: 0.8s;
+}
+
+.wrapper .nav-container .nav nav ul li:hover {
+  padding: 6%;
 }
 
 .wrapper .nav-container .nav nav ul li a {
